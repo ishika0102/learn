@@ -1,0 +1,4 @@
+air : 
+        1. install air :
+                go install github.com/air-verse/air@latest
+        2. create a .air.toml file with all the necessary configurations

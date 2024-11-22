@@ -1,0 +1,37 @@
+# Specifies the root directory for the application
+root = "."
+
+# Directory for temporary files (where the binary will be stored)
+tmp_dir = "tmp"
+
+[build]
+# Command to build the application
+cmd = "go run cmd/main.go"
+
+# Directory or file patterns to include for watching
+include_ext = ["go", "tpl", "tmpl", "html"]
+
+# Directory or file patterns to exclude from watching
+exclude_dir = ["vendor", "tmp"]
+exclude_file = []
+exclude_regex = ["_test.go"]
+
+# Delay before rebuilding
+delay = 10
+
+# Log file for build errors
+log = "build-errors.log"
+
+# Polling settings
+poll = true
+poll_interval = 500
+
+# Commands to run before and after building
+pre_cmd = []
+post_cmd = []
+
+# Whether to stop on error
+stop_on_error = true
+
+# Time to wait before re-running after a file change
+rerun_delay = 500

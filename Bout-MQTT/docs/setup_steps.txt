@@ -1,0 +1,32 @@
+1. download GO from official website and add go extension in VS code ( NOTE : install go 1.19 or later )
+        STEPS: 
+        1. Remove existing Go installations :
+                sudo apt-get purge golang-go
+                sudo apt-get autoremove
+        2. Download go1.19 or higher version( initially made using go version go1.22.0 linux/amd64 ) and open terminal. d to the directory where go is downloaded :
+                $ wget https://dl.google.com/go/go1.11.4.linux-amd64.tar.gz
+                sudo tar -C /usr/local -xzf go1.22.linux-amd64.tar.gz
+        3. Set go environment variables:
+                export PATH=$PATH:/usr/local/go/bin
+                export GOPATH=$HOME/go
+                export PATH=$PATH:$GOPATH/bin
+        4. verify installation: 
+                go version
+   
+2. initialize Go module :
+        go mod init bout-mqtt
+        go mod tidy
+
+3. MQTT : paho MQTT
+        go get github.com/eclipse/paho.mqtt.golang
+        go get github.com/joho/godotenv // this is for go .env file initialization
+
+
+
+        Mosquitto mqtt broker : 
+                sudo apt update
+                sudo apt install mosquitto
+                sudo systemctl status mosquitto
+                sudo systemctl start mosquitto
+                sudo systemctl enable mosquitto
+                sudo systemctl status mosquitto

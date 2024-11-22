@@ -1,0 +1,962 @@
+{
+  "territory": [
+    "/territory"
+  ],
+  "links": [
+    "/links",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/links",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/protocol[at0005]/links",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/links",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/links",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/links",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[openEHR-EHR-CLUSTER.medication_supply_amount.v0 and name/value='Dispense amount']/links",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_authorisation.v0 and name/value='Authorisation details']/links",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/links",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/links",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/links",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/items[at0051 and name/value='maxDosePerPeriod']/links",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/links",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/links",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0006]/links",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/links",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/links",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/links",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/links",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/links",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0117]/links",
+    "/context/other_context[at0001]/links"
+  ],
+  "feeder_audit": [
+    "/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/protocol[at0005]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/protocol[at0005]/items[at0004 and name/value='identifier']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0167]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[openEHR-EHR-CLUSTER.medication_supply_amount.v0 and name/value='Dispense amount']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[openEHR-EHR-CLUSTER.medication_supply_amount.v0 and name/value='Dispense amount']/items[at0142]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[openEHR-EHR-CLUSTER.medication_supply_amount.v0 and name/value='Dispense amount']/items[at0147]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[openEHR-EHR-CLUSTER.medication_supply_amount.v0 and name/value='Dispense amount']/items[at0131]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[openEHR-EHR-CLUSTER.medication_supply_amount.v0 and name/value='Dispense amount']/items[at0161]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[at0106]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_authorisation.v0 and name/value='Authorisation details']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_authorisation.v0 and name/value='Authorisation details']/items[at0072 and name/value='validityPeriod']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_authorisation.v0 and name/value='Authorisation details']/items[at0025 and name/value='numberOfRepeatsAllowed']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date changed']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last reviewed']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date reviewed']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date administration withheld']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date administered']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date dispensed']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date prescription issued']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date authorised']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date discontinued']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last administered']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first administered']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last dispensed']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first dispensed']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last authorised']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first authorised']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last prescription issued']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first prescription issued']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date ordered/recommended']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date changed']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last reviewed']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date reviewed']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date administration withheld']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date administered']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date dispensed']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date prescription issued']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date authorised']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date discontinued']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last administered']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first administered']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last dispensed']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first dispensed']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last authorised']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first authorised']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last prescription issued']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first prescription issued']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date ordered/recommended']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0001 and name/value='Status']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0018 and name/value='reason']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0044 and name/value='additionalInstructions']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/items[at0162]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/items[at0051 and name/value='maxDosePerPeriod']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/items[at0051 and name/value='maxDosePerPeriod']/items[at0053]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/items[at0051 and name/value='maxDosePerPeriod']/items[at0146]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/items[at0051 and name/value='maxDosePerPeriod']/items[at0130]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0006]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0006]/items[at0009]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0006]/items[at0005]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0004]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0003]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0001]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0002]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0066]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0102]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0134]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0025]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0024]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0023]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0026]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0004]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0014]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0003]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0145]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0144 and name/value='Dose']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0009 and name/value='dosageInstructions']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0091]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0133]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[at0127]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[at0140]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[at0139]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/items[at0133]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/items[at0116]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/items[at0115]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/items[at0142]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/items[at0071]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/items[at0132]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0117]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0117]/items[at0125]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0117]/items[at0124]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0116]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0115]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0071]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0132]/feeder_audit",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0070]/feeder_audit",
+    "/context/other_context[at0001]/feeder_audit",
+    "/context/other_context[at0001]/items[at0008]/feeder_audit"
+  ],
+  "name": [
+    "/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/protocol[at0005]/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/protocol[at0005]/items[at0004 and name/value='identifier']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[openEHR-EHR-CLUSTER.medication_supply_amount.v0 and name/value='Dispense amount']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_authorisation.v0 and name/value='Authorisation details']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_authorisation.v0 and name/value='Authorisation details']/items[at0072 and name/value='validityPeriod']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_authorisation.v0 and name/value='Authorisation details']/items[at0025 and name/value='numberOfRepeatsAllowed']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date changed']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last reviewed']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date reviewed']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date administration withheld']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date administered']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date dispensed']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date prescription issued']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date authorised']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date discontinued']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last administered']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first administered']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last dispensed']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first dispensed']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last authorised']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first authorised']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last prescription issued']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first prescription issued']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date ordered/recommended']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date changed']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last reviewed']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date reviewed']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date administration withheld']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date administered']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date dispensed']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date prescription issued']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date authorised']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date discontinued']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last administered']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first administered']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last dispensed']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first dispensed']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last authorised']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first authorised']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last prescription issued']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first prescription issued']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date ordered/recommended']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0001 and name/value='Status']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0018 and name/value='reason']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0044 and name/value='additionalInstructions']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/items[at0051 and name/value='maxDosePerPeriod']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0006]/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0144 and name/value='Dose']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0009 and name/value='dosageInstructions']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/name",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0117]/name",
+    "/context/other_context[at0001]/name"
+  ],
+  "archetype_details": [
+    "/archetype_details",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/archetype_details",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/protocol[at0005]/archetype_details",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/archetype_details",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/archetype_details",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/archetype_details",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[openEHR-EHR-CLUSTER.medication_supply_amount.v0 and name/value='Dispense amount']/archetype_details",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_authorisation.v0 and name/value='Authorisation details']/archetype_details",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/archetype_details",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/archetype_details",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/archetype_details",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/items[at0051 and name/value='maxDosePerPeriod']/archetype_details",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/archetype_details",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/archetype_details",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0006]/archetype_details",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/archetype_details",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/archetype_details",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/archetype_details",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/archetype_details",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/archetype_details",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0117]/archetype_details",
+    "/context/other_context[at0001]/archetype_details"
+  ],
+  "uid": [
+    "/uid",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/uid",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/protocol[at0005]/uid",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/uid",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/uid",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/uid",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[openEHR-EHR-CLUSTER.medication_supply_amount.v0 and name/value='Dispense amount']/uid",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_authorisation.v0 and name/value='Authorisation details']/uid",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/uid",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/uid",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/uid",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/items[at0051 and name/value='maxDosePerPeriod']/uid",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/uid",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/uid",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0006]/uid",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/uid",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/uid",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/uid",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/uid",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/uid",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0117]/uid",
+    "/context/other_context[at0001]/uid"
+  ],
+  "language": [
+    "/language",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/language"
+  ],
+  "composer": [
+    "/composer"
+  ],
+  "archetype_node_id": [
+    "/archetype_node_id",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/archetype_node_id",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/protocol[at0005]/archetype_node_id",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/archetype_node_id",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/archetype_node_id",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/archetype_node_id",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[openEHR-EHR-CLUSTER.medication_supply_amount.v0 and name/value='Dispense amount']/archetype_node_id",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_authorisation.v0 and name/value='Authorisation details']/archetype_node_id",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/archetype_node_id",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/archetype_node_id",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/archetype_node_id",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/items[at0051 and name/value='maxDosePerPeriod']/archetype_node_id",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/archetype_node_id",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/archetype_node_id",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0006]/archetype_node_id",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/archetype_node_id",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/archetype_node_id",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/archetype_node_id",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/archetype_node_id",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/archetype_node_id",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0117]/archetype_node_id",
+    "/context/other_context[at0001]/archetype_node_id"
+  ],
+  "medication_order": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]"
+  ],
+  "expiry_time": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/expiry_time"
+  ],
+  "other_participations": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/other_participations"
+  ],
+  "provider": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/provider"
+  ],
+  "wf_definition": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/wf_definition"
+  ],
+  "guideline_id": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/guideline_id"
+  ],
+  "encoding": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/encoding"
+  ],
+  "narrative": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/narrative"
+  ],
+  "subject": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/subject"
+  ],
+  "workflow_id": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/workflow_id"
+  ],
+  "dose_amount_description": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/protocol[at0005]"
+  ],
+  "extension": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/protocol[at0005]/items[at0008]",
+    "/context/other_context[at0001]/items[at0007]"
+  ],
+  "identifier": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/protocol[at0005]/items[at0004 and name/value='identifier']"
+  ],
+  "null_flavour": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/protocol[at0005]/items[at0004 and name/value='identifier']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0167]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[openEHR-EHR-CLUSTER.medication_supply_amount.v0 and name/value='Dispense amount']/items[at0142]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[openEHR-EHR-CLUSTER.medication_supply_amount.v0 and name/value='Dispense amount']/items[at0147]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[openEHR-EHR-CLUSTER.medication_supply_amount.v0 and name/value='Dispense amount']/items[at0131]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[openEHR-EHR-CLUSTER.medication_supply_amount.v0 and name/value='Dispense amount']/items[at0161]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[at0106]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_authorisation.v0 and name/value='Authorisation details']/items[at0072 and name/value='validityPeriod']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_authorisation.v0 and name/value='Authorisation details']/items[at0025 and name/value='numberOfRepeatsAllowed']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date changed']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last reviewed']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date reviewed']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date administration withheld']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date administered']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date dispensed']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date prescription issued']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date authorised']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date discontinued']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last administered']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first administered']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last dispensed']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first dispensed']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last authorised']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first authorised']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last prescription issued']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first prescription issued']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date ordered/recommended']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date changed']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last reviewed']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date reviewed']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date administration withheld']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date administered']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date dispensed']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date prescription issued']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date authorised']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date discontinued']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last administered']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first administered']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last dispensed']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first dispensed']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last authorised']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first authorised']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last prescription issued']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first prescription issued']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date ordered/recommended']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0001 and name/value='Status']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0018 and name/value='reason']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0044 and name/value='additionalInstructions']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/items[at0162]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/items[at0051 and name/value='maxDosePerPeriod']/items[at0053]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/items[at0051 and name/value='maxDosePerPeriod']/items[at0146]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/items[at0051 and name/value='maxDosePerPeriod']/items[at0130]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0006]/items[at0009]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0006]/items[at0005]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0004]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0003]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0001]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0002]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0066]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0102]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0134]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0025]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0024]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0023]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0026]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0004]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0014]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0003]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0145]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0144 and name/value='Dose']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0009 and name/value='dosageInstructions']/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0091]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0133]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[at0127]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[at0140]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[at0139]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/items[at0133]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/items[at0116]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/items[at0115]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/items[at0142]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/items[at0071]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/items[at0132]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0117]/items[at0125]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0117]/items[at0124]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0116]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0115]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0071]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0132]/null_flavour",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0070]/null_flavour",
+    "/context/other_context[at0001]/items[at0008]/null_flavour"
+  ],
+  "value": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/protocol[at0005]/items[at0004 and name/value='identifier']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0167]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[openEHR-EHR-CLUSTER.medication_supply_amount.v0 and name/value='Dispense amount']/items[at0142]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[openEHR-EHR-CLUSTER.medication_supply_amount.v0 and name/value='Dispense amount']/items[at0147]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[openEHR-EHR-CLUSTER.medication_supply_amount.v0 and name/value='Dispense amount']/items[at0131]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[openEHR-EHR-CLUSTER.medication_supply_amount.v0 and name/value='Dispense amount']/items[at0161]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[at0106]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_authorisation.v0 and name/value='Authorisation details']/items[at0072 and name/value='validityPeriod']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_authorisation.v0 and name/value='Authorisation details']/items[at0025 and name/value='numberOfRepeatsAllowed']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date changed']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last reviewed']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date reviewed']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date administration withheld']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date administered']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date dispensed']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date prescription issued']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date authorised']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date discontinued']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last administered']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first administered']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last dispensed']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first dispensed']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last authorised']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first authorised']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last prescription issued']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first prescription issued']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date ordered/recommended']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date changed']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last reviewed']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date reviewed']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date administration withheld']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date administered']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date dispensed']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date prescription issued']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date authorised']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date discontinued']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last administered']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first administered']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last dispensed']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first dispensed']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last authorised']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first authorised']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last prescription issued']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first prescription issued']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date ordered/recommended']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0001 and name/value='Status']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0018 and name/value='reason']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0044 and name/value='additionalInstructions']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/items[at0162]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/items[at0051 and name/value='maxDosePerPeriod']/items[at0053]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/items[at0051 and name/value='maxDosePerPeriod']/items[at0146]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/items[at0051 and name/value='maxDosePerPeriod']/items[at0130]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0006]/items[at0009]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0006]/items[at0005]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0004]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0003]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0001]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0002]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0102]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0025]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0024]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0023]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0014]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0145]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0009 and name/value='dosageInstructions']/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0091]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0133]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[at0140]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[at0139]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/items[at0133]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/items[at0116]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/items[at0115]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/items[at0142]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/items[at0071]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/items[at0132]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0117]/items[at0125]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0117]/items[at0124]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0116]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0115]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0071]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0132]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0070]/value",
+    "/context/other_context[at0001]/items[at0008]/value"
+  ],
+  "order": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]"
+  ],
+  "action_archetype_id": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/action_archetype_id"
+  ],
+  "timing": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/timing"
+  ],
+  "tree": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]",
+    "/context/other_context[at0001]"
+  ],
+  "comment": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0167]"
+  ],
+  "additional_details": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0166]"
+  ],
+  "dispense_directions": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]"
+  ],
+  "dispense_details": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[at0170]"
+  ],
+  "dispense_amount": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[openEHR-EHR-CLUSTER.medication_supply_amount.v0 and name/value='Dispense amount']"
+  ],
+  "duration_of_supply": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[openEHR-EHR-CLUSTER.medication_supply_amount.v0 and name/value='Dispense amount']/items[at0142]"
+  ],
+  "units": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[openEHR-EHR-CLUSTER.medication_supply_amount.v0 and name/value='Dispense amount']/items[at0147]"
+  ],
+  "amount": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[openEHR-EHR-CLUSTER.medication_supply_amount.v0 and name/value='Dispense amount']/items[at0131]"
+  ],
+  "amount_description": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[openEHR-EHR-CLUSTER.medication_supply_amount.v0 and name/value='Dispense amount']/items[at0161]"
+  ],
+  "dispense_instruction": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0129]/items[at0106]"
+  ],
+  "authorisation_details": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_authorisation.v0 and name/value='Authorisation details']"
+  ],
+  "validityperiod": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_authorisation.v0 and name/value='Authorisation details']/items[at0072 and name/value='validityPeriod']"
+  ],
+  "numberofrepeatsallowed": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_authorisation.v0 and name/value='Authorisation details']/items[at0025 and name/value='numberOfRepeatsAllowed']"
+  ],
+  "order_details": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]"
+  ],
+  "course_summary": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']"
+  ],
+  "date_changed2": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date changed']"
+  ],
+  "defining_code": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002]/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0001 and name/value='Status']/value/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0066]/value/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0026]/value/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[at0127]/value/defining_code",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/items[at0142]/value/defining_code",
+    "/category/defining_code"
+  ],
+  "date_last_reviewed2": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last reviewed']"
+  ],
+  "date_reviewed2": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date reviewed']"
+  ],
+  "date_administration_withheld2": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date administration withheld']"
+  ],
+  "date_administered2": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date administered']"
+  ],
+  "date_dispensed2": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date dispensed']"
+  ],
+  "date_prescription_issued2": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date prescription issued']"
+  ],
+  "date_authorised2": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date authorised']"
+  ],
+  "date_discontinued2": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date discontinued']"
+  ],
+  "date_last_administered2": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last administered']"
+  ],
+  "date_first_administered2": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first administered']"
+  ],
+  "date_last_dispensed2": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last dispensed']"
+  ],
+  "date_first_dispensed2": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first dispensed']"
+  ],
+  "date_last_authorised2": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last authorised']"
+  ],
+  "date_first_authorised2": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first authorised']"
+  ],
+  "date_last_prescription_issued2": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last prescription issued']"
+  ],
+  "date_first_prescription_issued2": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first prescription issued']"
+  ],
+  "date_ordered_recommended2": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date ordered/recommended']"
+  ],
+  "date_changed": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date changed']"
+  ],
+  "date_last_reviewed": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last reviewed']"
+  ],
+  "date_reviewed": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date reviewed']"
+  ],
+  "date_administration_withheld": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date administration withheld']"
+  ],
+  "date_administered": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date administered']"
+  ],
+  "date_dispensed": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date dispensed']"
+  ],
+  "date_prescription_issued": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date prescription issued']"
+  ],
+  "date_authorised": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date authorised']"
+  ],
+  "date_discontinued": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date discontinued']"
+  ],
+  "date_last_administered": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last administered']"
+  ],
+  "date_first_administered": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first administered']"
+  ],
+  "date_last_dispensed": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last dispensed']"
+  ],
+  "date_first_dispensed": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first dispensed']"
+  ],
+  "date_last_authorised": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last authorised']"
+  ],
+  "date_first_authorised": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first authorised']"
+  ],
+  "date_last_prescription_issued": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date last prescription issued']"
+  ],
+  "date_first_prescription_issued": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date first prescription issued']"
+  ],
+  "date_ordered_recommended": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0002 and name/value='Date ordered/recommended']"
+  ],
+  "status": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0 and name/value='Course summary']/items[at0001 and name/value='Status']"
+  ],
+  "reason": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0018 and name/value='reason']"
+  ],
+  "additionalinstructions": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0044 and name/value='additionalInstructions']"
+  ],
+  "medication_safety": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]"
+  ],
+  "override_reason": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/items[at0162]"
+  ],
+  "maxdoseperperiod": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/items[at0051 and name/value='maxDosePerPeriod']"
+  ],
+  "allowed_period": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/items[at0051 and name/value='maxDosePerPeriod']/items[at0053]"
+  ],
+  "maximum_amount_dose_unit": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/items[at0051 and name/value='maxDosePerPeriod']/items[at0146]"
+  ],
+  "maximum_amount": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0062]/items[at0051 and name/value='maxDosePerPeriod']/items[at0130]"
+  ],
+  "dose_direction": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]"
+  ],
+  "direction_repetition": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']"
+  ],
+  "specific_event": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0006]"
+  ],
+  "start_interval": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0006]/items[at0009]"
+  ],
+  "event_name": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0006]/items[at0005]"
+  ],
+  "specific_day_of_month": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0004]"
+  ],
+  "specific_day_of_week": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0003]"
+  ],
+  "specific_date": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0001]"
+  ],
+  "repetition_interval": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[openEHR-EHR-CLUSTER.timing_repetition.v0 and name/value='Direction repetition']/items[at0002]"
+  ],
+  "direction_duration": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0066]"
+  ],
+  "duration_value": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0066]/value"
+  ],
+  "coded_text_value": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0066]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0026]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[at0127]/value"
+  ],
+  "dose_pattern": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]"
+  ],
+  "conditional_administration": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0156]"
+  ],
+  "dose_administration_duration": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0102]"
+  ],
+  "infusion_administration_rate": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0134]"
+  ],
+  "text_value": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0134]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0026]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[at0127]/value"
+  ],
+  "quantity_value": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0134]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0003]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0144 and name/value='Dose']/value"
+  ],
+  "dose_timing": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']"
+  ],
+  "as_required_criterion": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0025]"
+  ],
+  "as_required": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0024]"
+  ],
+  "exact_timing_critical": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0023]"
+  ],
+  "named_time_event": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0026]"
+  ],
+  "specific_time": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0004]"
+  ],
+  "interval<dv_date_time>_value": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0004]/value"
+  ],
+  "upper_unbounded": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0004]/value/upper_unbounded",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0003]/value/upper_unbounded",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0144 and name/value='Dose']/value/upper_unbounded"
+  ],
+  "lower_unbounded": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0004]/value/lower_unbounded",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0003]/value/lower_unbounded",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0144 and name/value='Dose']/value/lower_unbounded"
+  ],
+  "upper_included": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0004]/value/upper_included",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0003]/value/upper_included",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0144 and name/value='Dose']/value/upper_included"
+  ],
+  "lower_included": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0004]/value/lower_included",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0003]/value/lower_included",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0144 and name/value='Dose']/value/lower_included"
+  ],
+  "lower": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0004]/value/lower",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0003]/value/lower",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0144 and name/value='Dose']/value/lower"
+  ],
+  "upper": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0004]/value/upper",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0003]/value/upper",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0144 and name/value='Dose']/value/upper"
+  ],
+  "time_value": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0004]/value"
+  ],
+  "interval": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0014]"
+  ],
+  "frequency": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0003]"
+  ],
+  "interval<dv_quantity>_value": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[openEHR-EHR-CLUSTER.timing_daily.v0 and name/value='Dose timing']/items[at0003]/value",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0144 and name/value='Dose']/value"
+  ],
+  "dose_unit": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0145]"
+  ],
+  "dose": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0144 and name/value='Dose']"
+  ],
+  "dosageinstructions": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0009 and name/value='dosageInstructions']"
+  ],
+  "route": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0091]"
+  ],
+  "preparation": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']"
+  ],
+  "substance_details": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0141]",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/items[at0141]"
+  ],
+  "description": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0133]",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/items[at0133]"
+  ],
+  "ingredient": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]"
+  ],
+  "role": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[at0127]"
+  ],
+  "ingredient_amount_unit": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[at0140]"
+  ],
+  "ingredient_amount": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[at0139]"
+  ],
+  "ingredient_substance": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']"
+  ],
+  "strength_unit": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/items[at0116]",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0116]"
+  ],
+  "strength": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/items[at0115]",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0115]"
+  ],
+  "category": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/items[at0142]",
+    "/category"
+  ],
+  "form": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/items[at0071]",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0071]"
+  ],
+  "substance_name": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0126]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Ingredient substance']/items[at0132]",
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0132]"
+  ],
+  "diluent": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0117]"
+  ],
+  "diluent_unit": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0117]/items[at0125]"
+  ],
+  "diluent_amount": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication_substance.v0 and name/value='Preparation']/items[at0117]/items[at0124]"
+  ],
+  "medication_item": [
+    "/content[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0070]"
+  ],
+  "context": [
+    "/context"
+  ],
+  "setting": [
+    "/context/setting"
+  ],
+  "health_care_facility": [
+    "/context/health_care_facility"
+  ],
+  "location": [
+    "/context/location"
+  ],
+  "end_time": [
+    "/context/end_time"
+  ],
+  "participations": [
+    "/context/participations"
+  ],
+  "start_time": [
+    "/context/start_time"
+  ],
+  "prescription_identifier": [
+    "/context/other_context[at0001]/items[at0008]"
+  ]
+}

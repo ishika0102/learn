@@ -1,0 +1,455 @@
+{
+	"info": {
+		"_postman_id": "13df6d05-34a1-492b-a4b8-66c78e032d43",
+		"name": "HMS-Web-Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "18065621"
+	},
+	"item": [
+		{
+			"name": "Patient",
+			"item": [
+				{
+					"name": "get_one_patient",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{web-local}}/patients/PID_1724761373811012"
+					},
+					"response": [
+						{
+							"name": "get_one_patient",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{local}}/patient/PID_1724667621326501"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 26 Aug 2024 09:11:49 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "498"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Cross-Origin-Embedder-Policy",
+									"value": "require-corp"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"Address\": {\n            \"City\": \"string\",\n            \"CountryCode\": \"string\",\n            \"District\": \"string\",\n            \"Line1\": \"string\",\n            \"Line2\": \"string\",\n            \"PinCode\": \"string\",\n            \"State\": \"string\",\n            \"Type\": \"string\"\n        },\n        \"EmergencyContact\": {\n            \"Address\": {\n                \"City\": \"\",\n                \"CountryCode\": \"\",\n                \"District\": \"\",\n                \"Line1\": \"\",\n                \"Line2\": \"\",\n                \"PinCode\": \"\",\n                \"State\": \"\",\n                \"Type\": \"\"\n            },\n            \"Contact\": {\n                \"EmailId\": \"\",\n                \"PhoneNumber\": \"\",\n                \"PhoneType\": \"\"\n            },\n            \"Name\": \"\",\n            \"Relationship\": \"\"\n        },\n        \"Gender\": \"string\",\n        \"MobileNo\": 8797876543,\n        \"Occupation\": \"string\"\n    },\n    \"message\": \"Patient Found Successfully\",\n    \"status\": \"200\"\n}"
+						}
+					]
+				},
+				{
+					"name": "create_patient",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"uhid\": \"string\",\n    \"alternate_uhid\": \"string\",\n    \"first_name\": \"string\", \n    \"last_name\": \"string\",\n    \"email_id\": \"kklkjj@gmail.com\", \n    \"mobile_no\": \"9876887612\",\n    \"date_of_birth\": \"2006-01-02T15:04:05Z\", \n    \"gender\": \"string\", \n    \"occupation\": \"string\",\n    \"address\": {\n      \"type\": \"string\",\n      \"line_1\": \"string\",\n      \"line_2\": \"string\",\n      \"city\": \"string\",\n      \"district\": \"string\",\n      \"state\": \"string\",\n      \"pin_code\": \"string\",\n      \"country_code\": \"string\"\n    },\n    \"emergency_contact\": {\n      \"name\": \"string\",\n      \"relationship\": \"string\",\n      \"address\": {\n        \"type\": \"string\",\n        \"line_1\": \"string\",\n        \"line_2\": \"string\",\n        \"city\": \"string\",\n        \"district\": \"string\",\n        \"state\": \"string\",\n        \"pin_code\": \"string\",\n        \"country_code\": \"string\"\n      },\n      \"contact\": {\n        \"phone_type\": \"string\",\n        \"phone_number\": \"string\",\n        \"email_id\": \"string\"\n      }\n    },\n    \"abha_addresses\": [\n        \"address1\",\n        \"address2\",\n        \"address3\"\n    ]\n}\n  ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{web-local}}/patient/"
+					},
+					"response": []
+				},
+				{
+					"name": "search patient",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{local}}/patients/search/456921370"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Patient By Abha",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Update transaction Id\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.environment.set(\"txn_id\", jsonData.data.txnId);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"abha_no\": \"xxxxxxxxxxxxxxxxx\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{local}}/patients/abha/"
+					},
+					"response": []
+				},
+				{
+					"name": "Verify OTP",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"otp\": \"674018\",\n    \"tnxid\":\"{{txn_id}}\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{local}}/patients/verify_opt"
+					},
+					"response": [
+						{
+							"name": "verify_otp",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"otp\": \"674018\",\n    \"tnxid\":\"{{txn_id}}\"\n\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://127.0.0.1:8000/api/patient/verify_opt"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 23 Aug 2024 08:42:31 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "336"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Cross-Origin-Embedder-Policy",
+									"value": "require-corp"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"address\": \"Njavally Koonthanathu House, Karimkunnam P O, Karimkunnam, Thodupuzha, Karimkunnam, Thodupuzha, Idukki, Kerala\",\n        \"dateOfBirth\": \"16\",\n        \"emailId\": \"\",\n        \"firstName\": \"Claris\",\n        \"gender\": \"F\",\n        \"lastName\": \"Joshy\",\n        \"mobileNo\": \"9188410565\",\n        \"monthOfBirth\": \"08\",\n        \"yearOfBirth\": \"2001\"\n    },\n    \"message\": \"OPT verified successfully\",\n    \"status\": \"200\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Appointment",
+			"item": [
+				{
+					"name": "Create Appointment slots for next 14 days",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"doctors\": [\n        {\n            \"doctor_id\": \"DOC_1\",\n            \"doctor_name\": \"Dr. Rajesh\",\n            \"department\": \"Cardiology\",\n            \"location\": \"LOC A\",\n            \"slot_time\": 20,\n            \"days_of_week\": [\n                1,\n                3,\n                5\n            ],\n            \"slots\": [\n                \"10:00-13:00\"\n            ]\n        },\n        {\n            \"doctor_id\": \"DOC_2\",\n            \"doctor_name\": \"Dr. Kamala\",\n            \"department\": \"Orthopedics\",\n            \"location\": \"LOC B\",\n            \"slot_time\": 15,\n            \"days_of_week\": [\n                2,\n                4\n            ],\n            \"slots\": [\n                \"10:00-13:00\"\n            ]\n        },\n        {\n            \"doctor_id\": \"DOC_3\",\n            \"doctor_name\": \"Dr. Sharma\",\n            \"department\": \"General Medicine\",\n            \"location\": \"LOC C\",\n            \"slot_time\": 10,\n            \"days_of_week\": [\n                0,\n                1,\n                2,\n                3,\n                4,\n                5,\n                6\n            ],\n            \"slots\": [\n                \"10:00-13:00\"\n            ]\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{local}}/appointments"
+					},
+					"response": []
+				},
+				{
+					"name": "Get One Appointment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{local}}/appointments/SLOT_1724660306443659_1"
+					},
+					"response": []
+				},
+				{
+					"name": "Block Slot",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"duration_in_minutes\": 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{web-local}}/appointment/block/SLOT_1724660306443659_1/patient/PID_1724831953270977"
+					},
+					"response": []
+				},
+				{
+					"name": "Book Slot",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"token_no\": \"10\",\n    \"patient_id\": \"PID_000001\",\n    \"patient_name\": \"Subbaraj\",\n    \"service_id\": \"SERV_1\",\n    \"payment_status\": \"done\",\n    \"payment_id\": \"TRNX_1\",\n    \"notes\": \"Fever\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{local}}/appointments/book/SLOT_1724660306443659_1"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Appointment Slots",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/appointments/DOC_1/slot/26-08-2024",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"appointments",
+								"DOC_1",
+								"slot",
+								"26-08-2024"
+							],
+							"query": [
+								{
+									"key": "department",
+									"value": "Orthopedics",
+									"description": "Department Name",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get upcoming appointment pateint",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{web-local}}/appointments/patient/PID_000001"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Dummy",
+			"item": [
+				{
+					"name": "List Departments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{local}}/departments"
+					},
+					"response": []
+				},
+				{
+					"name": "List Doctors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{web-local}}/doctors?department=Cardiology",
+							"host": [
+								"{{web-local}}"
+							],
+							"path": [
+								"doctors"
+							],
+							"query": [
+								{
+									"key": "department",
+									"value": "Cardiology"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "Get_cart",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{web-local}}/cart/PID_1724831953270977"
+					},
+					"response": []
+				},
+				{
+					"name": "updatePayment",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": "{{web-local}}/payment/PID_1724830476048326"
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "local",
+			"value": "",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "local",
+			"value": "",
+			"type": "string"
+		}
+	]
+}

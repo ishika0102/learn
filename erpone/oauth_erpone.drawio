@@ -1,0 +1,136 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" version="24.7.14">
+  <diagram name="Page-1" id="UfRqwy806-FKPWQSFXIJ">
+    <mxGraphModel dx="1605" dy="933" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-2" value="oauth_access_tokens" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="430" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-3" value="id" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-4" value="user_id" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="L8Wf7PdjrFxHGzK6U3SE-5" target="L8Wf7PdjrFxHGzK6U3SE-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-5" value="revoked" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="750" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-6" value="created at" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="880" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="L8Wf7PdjrFxHGzK6U3SE-7" target="L8Wf7PdjrFxHGzK6U3SE-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-7" value="scopes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-8" value="client_id" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-9" value="name" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-10" value="updated_at" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="990" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="L8Wf7PdjrFxHGzK6U3SE-11" target="L8Wf7PdjrFxHGzK6U3SE-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-11" value="expires_at" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-15" value="&lt;ul&gt;&lt;li&gt;Laravelvendorpassport are revoked but not all&lt;/li&gt;&lt;li&gt;Laravel8PassportAuth all are not revoked&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="730" width="290" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-19" value="[ ] - empty" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="647.5" width="140" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-21" value="id" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="209" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-22" value="user_id" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="319" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-23" value="redirect" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="759" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="L8Wf7PdjrFxHGzK6U3SE-24" target="L8Wf7PdjrFxHGzK6U3SE-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-24" value="created at" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="1240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-25" value="provider" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="649" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-26" value="secret" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="L8Wf7PdjrFxHGzK6U3SE-27" target="L8Wf7PdjrFxHGzK6U3SE-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-27" value="name" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="L8Wf7PdjrFxHGzK6U3SE-28" target="L8Wf7PdjrFxHGzK6U3SE-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-28" value="updated_at" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="1370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-29" value="personal_access_client" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="880" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-30" value="password_client" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="1000" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="L8Wf7PdjrFxHGzK6U3SE-31" target="L8Wf7PdjrFxHGzK6U3SE-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-31" value="revoked" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="1130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-32" value="oauth_client" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="900" y="150" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-33" value="none revoked" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="1145" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-35" value="larvel personal access client / laravel&amp;nbsp;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22oauth_access_tokens%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3BwhiteSpace%3Dwrap%3Brounded%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2280%22%20y%3D%22430%22%20width%3D%2260%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;personal grant client" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="432.5" width="230" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-37" value="larvel personal access client&amp;nbsp; = null laravel&amp;nbsp;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22oauth_access_tokens%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3BwhiteSpace%3Dwrap%3Brounded%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2280%22%20y%3D%22430%22%20width%3D%2260%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;personal grant client = users" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="665" width="230" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-38" value="larvel personal access client = 1 laravel&amp;nbsp;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22oauth_access_tokens%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3BwhiteSpace%3Dwrap%3Brounded%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2280%22%20y%3D%22430%22%20width%3D%2260%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;personal grant client = 0" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="892.5" width="230" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-39" value="null" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="331.5" width="230" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-40" value="auto inc" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="212.5" width="230" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-41" value="unique" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="537.5" width="230" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-42" value="http://localhost" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="775" width="230" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-43" value="same for each row" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="1310" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-46" value="larvel personal access client = 1 laravel&amp;nbsp;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22oauth_access_tokens%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3BwhiteSpace%3Dwrap%3Brounded%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2280%22%20y%3D%22430%22%20width%3D%2260%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;personal grant client = 0" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="1012.5" width="230" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="L8Wf7PdjrFxHGzK6U3SE-47" value="1 year, 17 hours, 29 minutes, and 59 seconds" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1090" width="180" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

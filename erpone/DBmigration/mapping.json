@@ -1,0 +1,181 @@
+{
+        "routes": {
+                "mysql_table": "routes",
+                "mongodb_collection": "routes",
+                "fields": {
+                        "id": {
+                                "mongo_field": "id",
+                                "type": "int"
+                        },
+                        "name": {
+                                "mongo_field": "name",
+                                "type": "string"
+                        },
+                        "active": {
+                                "mongo_field": "active",
+                                "type": "boolean"
+                        },
+                        "created_at": {
+                                "mongo_field": "created_at",
+                                "type": "datetime"
+                        },
+                        "updated_at": {
+                                "mongo_field": "updated_at",
+                                "type": "datetime"
+                        }
+                }
+        },
+        "roles": {
+                "mysql_table": "roles",
+                "mongodb_collection": "roles",
+                "fields": {
+                        "id": {
+                                "mongo_field": "id",
+                                "type": "int"
+                        },
+                        "role_code": {
+                                "mongo_field": "role_code",
+                                "type": "string"
+                        },
+                        "role_name": {
+                                "mongo_field": "role_name",
+                                "type": "string"
+                        },
+                        "active": {
+                                "mongo_field": "active",
+                                "type": "boolean"
+                        },
+                        "created_at": {
+                                "mongo_field": "created_at",
+                                "type": "datetime"
+                        },
+                        "updated_at": {
+                                "mongo_field": "updated_at",
+                                "type": "datetime"
+                        },
+                        "name": {
+                                "mongo_field": "name",
+                                "type": "string"
+                        },
+                        "display_name": {
+                                "mongo_field": "display_name",
+                                "type": "string"
+                        },
+                        "description": {
+                                "mongo_field": "description",
+                                "type": "string"
+                        }
+                }
+        },
+        "role_user": {
+                "mysql_table": "role_user",
+                "mongodb_collection": "role_user",
+                "fields": {
+                        "user_id": {
+                                "mongo_field": "user_id",
+                                "type": "int"
+                        },
+                        "role_id": {
+                                "mongo_field": "role_id",
+                                "type": "int"
+                        }
+                },
+                "embedded": {
+                        "roles": {
+                                "mysql_table": "roles",
+                                "mongo_field": "role_info",
+                                "fields": {
+                                        "role_code": {
+                                                "mongo_field": "role_code",
+                                                "type": "string"
+                                        },
+                                        "role_name": {
+                                                "mongo_field": "role_name",
+                                                "type": "string"
+                                        }
+                                }
+                        }
+                }
+        },
+        "categories": {
+                "mysql_table": "categories",
+                "mongodb_collection": "categories",
+                "fields": {
+                        "id": {
+                                "mongo_field": "id",
+                                "type": "int"
+                        },
+                        "category": {
+                                "mongo_field": "category",
+                                "type": "string"
+                        },
+                        "active": {
+                                "mongo_field": "active",
+                                "type": "boolean"
+                        }
+                },
+                "embedded": {
+                        "categories": {
+                                "mysql_table": "categories",
+                                "mongo_field": "audit_log",
+                                "fields": {
+                                        "created_at": {
+                                                "mongo_field": "created_at",
+                                                "type": "datetime"
+                                        },
+                                        "updated_at": {
+                                                "mongo_field": "updated_at",
+                                                "type": "datetime"
+                                        }
+                                }
+                        }
+                },
+                "additional_fields": {
+                        "parent": {
+                                "value": "root"
+                        }
+                }
+        },
+        "sub_categories": {
+                "mysql_table": "sub_categories",
+                "mongodb_collection": "categories",
+                "fields": {
+                        "id": {
+                                "mongo_field": "id",
+                                "type": "int"
+                        },
+                        "subcategory": {
+                                "mongo_field": "category",
+                                "type": "string"
+                        },
+                        "active": {
+                                "mongo_field": "active",
+                                "type": "boolean"
+                        }
+                },
+                "embedded": {
+                        "categories": {
+                                "mysql_table": "sub_categories",
+                                "mongo_field": "audit_log",
+                                "fields": {
+                                        "created_at": {
+                                                "mongo_field": "created_at",
+                                                "type": "datetime"
+                                        },
+                                        "updated_at": {
+                                                "mongo_field": "updated_at",
+                                                "type": "datetime"
+                                        }
+                                }
+                        }
+                },
+                "additional_fields": {
+                        "parent": {
+                                "mysql_table": "categories",
+                                "foreign_key": "id",
+                                "reference_field": "category",
+                                "reference_table": "categories"
+                        }
+                }
+        }
+}

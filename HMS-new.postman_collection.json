@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "58df1e73-0952-430d-aee3-cf5e4bfbda3d",
+		"name": "HMS-new",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "18065621"
+	},
+	"item": [
+		{
+			"name": "login",
+			"item": [
+				{
+					"name": "login",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Update transaction Id\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.environment.set(\"token\", jsonData.data.access_token);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\" : \"admin\",\n    \"password\" : \"admin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://10.10.5.56:8001/api/v1/login"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"username\" : \"8795885888\",\n \"temp_password\": \"Sq&m)snZS4}\",\n \"new_password\": \"ishika123\"   \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:7001/api/change-password"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Service provider",
+			"item": [
+				{
+					"name": "create SP",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "facility",
+			"item": [
+				{
+					"name": "create facility",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"abha_facility_id\":\"IN2910001485\",\n    \"name\":\"Greenview Medical Center\",\n    \"phone_country_code\":\"+91\",\n    \"phone_number\":\"9210211291\",\n    \"system_of_medicine\":\"Modern Medicine(Allopathy)\",\n    \"system_of_medicine_code\":\"M\",\n    \"facility_type\":\"Hospital\",\n    \"abha_status\":\"Submitted\",\n    \"ownership_code\":\"P\",\n    \"ownership\":\"Private\",\n    \"facility_type_code\":\"40\",\n    \"landline_number\":\"04862 231234\",\n    \"email_id\":\"fac@probe.in\",\n    \"communication_address\":{\n        \"address1\":\"14th main rd,HSR Layout, \",\n        \"sub_district_lgd_code\":\"5543\",\n        \"sub_district\":\"Bengaluru South\",\n        \"district_code\":\"525\",\n        \"district\":\"BENGALURU URBAN\",\n        \"village_city_town_lgd_code\":\"613039\",\n        \"village_city_town\":\"Agara\",\n        \"latitude\":\"12.924358127494017\",\n        \"longitude\":\"77.63271883189407\",\n        \"state_lgd_code\":\"29\",\n        \"state\":\"KARNATAKA\",\n        \"pin_code\":\"560102\",\n        \"country\":\"India\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://0.0.0.0:7001/api/v1/facility"
+					},
+					"response": []
+				},
+				{
+					"name": "fetch facility",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": "http://0.0.0.0:7001/api/v1/facility/fetch/IN2910001484"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "spa",
+			"item": [
+				{
+					"name": "create spq",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"first_name\" : \"ishika\", //required\n    \"last_name\" : \"dubey\", //required\n    \"time_zone\" :\"GMT+\", //required\n    \"phone_country_code\":\"91\", //required\n    \"phone_number\" :\"7777777777\", //required\n    \"service_provider_id\" : \"SP_1731648038832219\", // optional but if SPAC and SPA then required\n    \"email_id\" : \"ishika@probeplus.in\",  //required\n    \"role\" :\"SPA\",  //required\n    \"clone_parent_id\": \"nil\"  //required\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://0.0.0.0:7001/api/v1/user"
+					},
+					"response": []
+				},
+				{
+					"name": "get one spa",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": "http://0.0.0.0:7001/api/v1/user/clone"
+					},
+					"response": []
+				},
+				{
+					"name": "user profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": "http://10.10.5.56:8001/api/v1/user/USER0001"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

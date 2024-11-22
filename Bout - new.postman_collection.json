@@ -1,0 +1,285 @@
+{
+	"info": {
+		"_postman_id": "e3f7d1b9-e656-4448-b01b-10772b78548d",
+		"name": "Bout - new",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18065621"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"UserName\": \"example\",\n    \"Password\": \"password\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/login",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Root",
+			"item": [
+				{
+					"name": "create_root",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"UserName\": \"ishika\",\n    \"UserRole\": \"root\",\n    \"UserStatus\":\"enable\",\n    \"Password\": \"ishika123\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/root/",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"root",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create_distributor_admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"UserName\": \"ishika_da1\",\n  \"UserStatus\": \"enable\",\n  \"UserRole\": \"distributorAdmin\",\n  \"Password\": \"ishika_da123\",\n  \"FirstName\": \"ishika_da\",\n  \"LastName\": \"dubey\",\n  \"Email\": \"ishika@gmail.com\",\n  \"CountryCode\": \"+91\",\n  \"ContactNumber\": \"9876543210\",\n  \"BelongToOrg\": \"xyz-Distributor\",\n  \"PlanId\": \"GOLD123 \",\n  \"PlanStatus\": \"enable\",\n  \"CreatedByUserId\": \"root_1\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/distributor_admin/",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"distributor_admin",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create_custom_plan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"plan_name\": \"xyz-Distributor CustomPlan-1\",\n  \"allowed_users\": 10,\n  \"allowed_primary_organizations\": 1,\n  \"allowed_sub_organizations\": 2,\n  \"allowed_devices\": 20,\n  \"plan_status\": \"enable\",\n  \"plan_validity\": \"30 days\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/plan/",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"plan",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list_all_distribution_admins",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDg2OTM0MjksInVzZXIiOiJleGFtcGxlIn0.XUE_H5TFkuLdyFIX5V5gNnVzZM9qS7ERinISqvK4jzM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL}}/distributor_admin/",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"distributor_admin",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_distributor_admin_info",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"UserId\": \"USR_1708508161731714\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/distributor_admin/da_info",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"distributor_admin",
+								"da_info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_distributor_admin",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"UserId\": \"USR_1708508161731714\",\n  \"FirstName\": \"ishika_update123\",\n  \"LastName\": \"dubey\",\n  \"Email\": \"string@gmail.com\",\n  \"CountryCode\": \"+92\",\n  \"ContactNumber\": \"9513578426\",\n  \"BelongToOrg\": \"probepluse\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/distributor_admin/",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"distributor_admin",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Distributor Admin",
+			"item": [
+				{
+					"name": "create_pri_organization",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Name\" : \"Apollo\",\n    \"CountryCode\" : \"+91\",\n    \"ContactNumber\" : \"9804559330\",\n    \"Address\" : \"34,24th main, kormangala\",\n    \"City\": \"Bangalore\",\n    \"State\": \"Bangalore\",\n    \"Country\": \"India\",\n    \"Pincode\": \"560076\",\n    \"TotalDevices\": 203,\n    \"TotalUsers\": 56,\n    \"TotalSubOrgs\": 3,\n    \"OrgStatus\": \"enable\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/organization",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"organization"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create_organization_admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"UserName\" : \"ishika_oa\",\n    \"UserStatus\": \"enable\",\n    \"UserRole\": \"organizationAdmin\",\n    \"Password\" : \"ishika_oa123\",\n    \"FirstName\" : \"ishika\",\n    \"LastName\" : \"dubey\",\n    \"Email\": \"ishika@gmail.com\",\n    \"CountryCode\" : \"+91\",\n    \"ContactNumber\" : \"9833247655\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/organization_admin",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"organization_admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list_all_primary_organizations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/organization",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"organization"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "http://127.0.0.1:8000"
+		}
+	]
+}

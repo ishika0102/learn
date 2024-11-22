@@ -1,0 +1,59 @@
+version: '3.7'
+services:
+
+  postgresql:
+    image: docker.io/bitnami/postgresql:11
+    container_name: postgres-database
+    environment:
+      # ALLOW_EMPTY_PASSWORD is recommended only for development.
+      - ALLOW_EMPTY_PASSWORD=yes
+      - POSTGRESQL_USERNAME=bn_keycloak
+      - POSTGRESQL_DATABASE=bitnami_keycloak
+    volumes:
+      - /home:/bitnami/postgresql
+    networks:
+      - dev_network
+    user: "0:0"
+
+
+  keycloak:
+    image: docker.io/bitnami/keycloak:21
+    container_name: keycloak
+    environment:
+      - KEYCLOAK_ADMIN_USER=admin
+      - KEYCLOAK_ADMIN_PASSWORD=admin
+      - KEYCLOAK_ADMIN_EMAIL=deepak@probeplus.com
+      - KEYCLOAK_ADMIN_EMAIL_VERIFIED=true
+      - POSTGRESQL_HOST=postgres-database
+      - SMTP_HOST=smtp-relay.brevo.com
+      - SMTP_PORT=587
+      - SMTP_USER=deepakbaskar@outlook.com
+      - SMTP_PASSWORD=hMnBcXIqGsVvOaT7
+      - SMTP_STARTTLS_ENABLE=true
+      - SMTP_AUTH=true
+    depends_on:
+      - postgresql
+    ports:
+      - "3000:8080"
+    networks:
+      - dev_network
+    volumes:
+      - ./realm_new/ecgvue.json:/opt/bitnami/keycloak/data/import/ecgvue.json
+      - ./realm_new/ecgvue_test.json:/opt/bitnami/keycloak/data/import/ecgvue_test.json
+      - ./realm_new/ecgvue_staging.json:/opt/bitnami/keycloak/data/import/ecgvue_staging.json
+      - ./ecgvue-theme:/opt/bitnami/keycloak/themes/ecgvue-theme
+
+    # docker exec -it keycloak /opt/bitnami/keycloak/bin/kc.sh import --file /opt/bitnami/keycloak/data/import/ecgvue.json
+    # docker exec -it keycloak /opt/bitnami/keycloak/bin/kc.sh import --file /opt/bitnami/keycloak/data/import/ecgvue_test.json
+    # command: >
+    #   bash -c "
+    #   /opt/bitnami/keycloak/bin/kc.sh import --file /opt/bitnami/keycloak/data/import/ecgvue.json
+    #   "
+
+networks:
+  dev_network:
+    driver: bridge
+
+volumes:
+  postgresql_data:
+    driver: local

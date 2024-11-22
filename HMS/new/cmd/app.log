@@ -1,0 +1,11 @@
+2024/08/19 15:20:40 main.go:31: Logger is working successfully
+2024/08/19 15:22:53 main.go:31: Logger is working successfully
+2024/08/20 15:51:48 main.go:45: Logger is working successfully
+2024/08/20 16:56:23 main.go:45: Logger is working successfully
+2024/08/20 17:02:13 main.go:45: Logger is working successfully
+2024/08/21 09:59:54 main.go:45: Logger is working successfully
+2024/08/21 10:01:40 main.go:46: Logger is working successfully
+2024/08/21 10:04:28 controller.go:35: err:parsing time "22-12-2000" as "2006-01-02T15:04:05Z07:00": cannot parse "22-12-2000" as "2006"
+2024/08/21 10:04:53 controller.go:35: err:parsing time "2006-01-02T15:04:05Z07:00": extra text: "07:00"
+2024/08/21 10:05:31 main.go:46: Logger is working successfully
+2024/08/21 10:05:40 controller.go:36: err:invalid character '}' looking for beginning of object key string

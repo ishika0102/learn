@@ -1,0 +1,5 @@
+server.port=8888
+
+ehrbase.address=172.18.0.2
+ehrbase.port=8080
+ehrbase.path=/ehrbase/rest/openehr/v1/

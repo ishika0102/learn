@@ -1,0 +1,2492 @@
+class Admins(BaseModel):
+    __tablename__ = 'admins'
+    id: int
+    name: str
+    email: str
+    phone: str
+    dob: date
+    doj: date
+    role_id: int
+    password: str
+    createdBy: int
+    status: bool
+    remember_token: str
+    created_at: datetime
+    updated_at: datetime
+
+
+class Branches(BaseModel):
+    __tablename__ = 'branches'
+    id: int
+    company_id: int
+    is_active: bool
+    name: str
+    currency: str
+    office_type: str
+    office_type_id: int
+    address1: str
+    address2: str
+    landmark: str
+    country: str
+    state: str
+    district: str
+    pin: int
+    geo_tag: str
+    email_id: str
+    contact_number: str
+    mobile_number: str
+    branch: str
+    bank_name: str
+    account_number: str
+    account_type: str
+    upi: str
+    ifsc: str
+    created_at: datetime
+    updated_at: datetime
+    deleted_at: datetime
+    state_id: int
+
+
+class Branch_types(BaseModel):
+    __tablename__ = 'branch_types'
+    id: int
+    name: str
+    active: bool
+    created_at: datetime
+    updated_at: datetime
+    deleted_at: datetime
+
+
+class Categories(BaseModel):
+    __tablename__ = 'categories'
+    id: int
+    category: str
+    active: bool
+    created_at: datetime
+    updated_at: datetime
+    deleted_at: datetime
+
+
+class Companies(BaseModel):
+    __tablename__ = 'companies'
+    id: int
+    vendorid: int
+    companycode: str
+    companylogo: str
+    companyname: str
+    companytype: str
+    industry_types_id: int
+    companyemail: str
+    companyphone: str
+    companypancard: str
+    gstno: str
+    pincode: int
+    currency: str
+    web_address: str
+    start_date: date
+    expired_date: date
+    approval_status: str
+    status: str
+    register_at: datetime
+    created_at: datetime
+    updated_at: datetime
+    deleted_at: datetime
+    address1: str
+    address2: str
+    landmark: str
+    country: str
+    state: str
+    district: str
+    state_id: int
+
+
+class Countries(BaseModel):
+    __tablename__ = 'countries'
+    id: int
+    country_name: str
+    country_code: str
+    created_at: datetime
+    updated_at: datetime
+    deleted_at: datetime
+
+
+class Credit_notes_details(BaseModel):
+    __tablename__ = 'credit_notes_details'
+    id: int
+    retailer_id: int
+    creditnoteid: str
+    returnId: int
+    amount_type: str
+    credit_amount: str
+    invoice_Id: int
+    invoice_amount: float
+    total_credit_amount: str
+    created_at: datetime
+    updated_at: datetime
+    tally_processing_flag: int
+    tally_created_by: int
+    tally_created_at: datetime
+    credit_method: str
+    debit_amount: str
+    debit_flag: int
+    return_type: str
+    tally_credit_id: str
+    tally_description: str
+
+
+class Currencies(BaseModel):
+    __tablename__ = 'currencies'
+    id: int
+    currency_name: str
+    currency_code: str
+    created_at: datetime
+    updated_at: datetime
+    deleted_at: datetime
+
+
+class Dayattendance_images(BaseModel):
+    __tablename__ = 'dayattendance_images'
+    id: int
+    dayattendance_id: int
+    image_url: str
+    punch: str
+    created_at: datetime
+    updated_at: datetime
+
+
+class Day_attendances(BaseModel):
+    __tablename__ = 'day_attendances'
+    id: int
+    user_id: int
+    attence: datetime
+    punch: str
+    latitude: str
+    longitude: str
+    createAPI: datetime
+    created_at: datetime
+    updated_at: datetime
+    time_taken: str
+    kilometer: str
+    reference: str
+    punch_active: int
+    attence_status: int
+    logout_attence: datetime
+    logout_punch: str
+    logout_latitude: str
+    logout_longitude: str
+    fcm_token: str
+    login_route_id: int
+    logout_route_id: int
+    travel_mode: str
+    travel_mode_id: int
+    start_odometer_reading: str
+    end_odometer_reading: str
+    odometer_kilometer: str
+    travel_kilometer: str
+    manual_kilometer: str
+    manual_kilometer_updated_by: int
+    manual_kilometer_updated_at: datetime
+    public_transport_amount: str
+    public_transport_details: str
+    day_allowance: str
+    travel_allowance: str
+    total_travel_allowance: str
+    total_allowance: str
+    user_day_report_id: int
+    other_expense: str
+    total_odometer_allowance: str
+    distance: str
+    is_accurate: bool
+
+
+class Districts(BaseModel):
+    __tablename__ = 'districts'
+    id: int
+    state_id: str
+    district_name: str
+    created_at: datetime
+    updated_at: datetime
+    deleted_at: datetime
+
+
+class Domains(BaseModel):
+    __tablename__ = 'domains'
+    id: int
+    domain: str
+    tenant_id: str
+    created_at: datetime
+    updated_at: datetime
+
+
+class Estimate_purchaseorders(BaseModel):
+    __tablename__ = 'estimate_purchaseorders'
+    id: int
+    po_no: str
+    orderid: str
+    vendor_id: int
+    retailer_id: int
+    logo_url: str
+    vendor_companyname: str
+    vendor_name: str
+    vendor_gst_no: str
+    vendor_mobilenumber: str
+    vendor_email: str
+    vendor_currency: str
+    vendor_address1: str
+    vendor_address2: str
+    vendor_landmark: str
+    vendor_country: str
+    vendor_state: str
+    vendor_district: str
+    vendor_pincode: str
+    vendor_geo_tag: str
+    gross_total_amount: str
+    discount_amount: str
+    gst_amount: str
+    cess_extra_amount: str
+    freight_amount: str
+    packaging_amount: str
+    packaging_gst: str
+    payable_amount: str
+    total_payable_amount: str
+    total_paid_amount: str
+    approval_by: int
+    is_approved: int
+    approval_status: str
+    approval_at: datetime
+    soconvert_by: int
+    soconvert_at: datetime
+    is_soconvert: int
+    cancel_date: datetime
+    cancel_by: int
+    cancel_at: int
+    cancel_reason: str
+    orderdate: datetime
+    clientType: str
+    created_at: datetime
+    updated_at: datetime
+    sgst_amount: str
+    cgst_amount: str
+    igst_amount: str
+
+
+class Estimate_purchaseorder_details(BaseModel):
+    __tablename__ = 'estimate_purchaseorder_details'
+    id: int
+    po_no: str
+    orderid: str
+    vendor_id: int
+    retailer_id: int
+    product_id: int
+    product_name: str
+    sku_code: str
+    hsn_code: str
+    preferred_product: bool
+    brand: str
+    minimum_reorder_quantity: str
+    product_description: str
+    inventory_type: str
+    units_name: str
+    category_id: int
+    category_name: str
+    sub_category_id: int
+    sub_category_name: str
+    cost_price: str
+    total_cost_price: str
+    discount: str
+    discount_amount: str
+    total_discount_amount: str
+    gst: str
+    gst_price: str
+    total_gst_price: str
+    cess_extra: str
+    cess_extra_price: str
+    total_cess_extra_price: str
+    tax_amt: str
+    total_tax_amt: str
+    sales_price: str
+    total_sales_price: str
+    total_amt: str
+    value: str
+    quantity: int
+    approval_status: str
+    cancel_date: datetime
+    cancel_by: int
+    cancel_at: int
+    cancel_reason: str
+    salesType: str
+    returnId: int
+    return_details_id: int
+    retailer_discount_amount: str
+    retailer_discount: str
+    retailer_discount_type: int
+    onboard_discount_type: int
+    onboard_discount: str
+    onboard_discount_amount: str
+    created_at: datetime
+    updated_at: datetime
+    product_unique_id: str
+    onboard_discount_value: str
+    sgst_price: str
+    cgst_price: str
+    igst_price: str
+    total_sgst_price: str
+    total_cgst_price: str
+    total_igst_price: str
+
+
+class Estimate_purchaseorder_statuses(BaseModel):
+    __tablename__ = 'estimate_purchaseorder_statuses'
+    id: int
+    pId: str
+    orderid: str
+    orderdate: date
+    invoiceno: str
+    approval_status: str
+    approval_by: int
+    approval_at: datetime
+    reference: str
+    orderby: int
+    status: int
+    created_at: datetime
+    updated_at: datetime
+
+
+class Estimate_salesorders(BaseModel):
+    __tablename__ = 'estimate_salesorders'
+    id: int
+    so_no: str
+    orderid: str
+    retailer_id: int
+    retailer_company: str
+    retailer_name: str
+    retailer_gstno: str
+    retailer_mobilenumber: str
+    retailer_email: str
+    retailer_pincode: int
+    retailer_currency: str
+    retailer_address1: str
+    retailer_address2: str
+    retailer_landmark: str
+    retailer_country: str
+    retailer_state: str
+    retailer_district: str
+    retailer_bank_name: str
+    retailer_account_number: str
+    retailer_account_type: str
+    retailer_upi: str
+    retailer_ifsc: str
+    vendor_id: int
+    vendor_name: str
+    vendor_companyname: str
+    logo_url: str
+    vendor_gst_no: str
+    vendor_mobilenumber: str
+    vendor_email: str
+    vendor_currency: str
+    vendor_address1: str
+    vendor_address2: str
+    vendor_landmark: str
+    vendor_country: str
+    vendor_state: str
+    vendor_district: str
+    vendor_pincode: str
+    vendor_geo_tag: str
+    gross_total_amount: str
+    discount_amount: str
+    gst_amount: str
+    cess_extra_amount: str
+    payable_amount: str
+    total_payable_amount: str
+    total_paid_amount: str
+    is_approved: int
+    approval_by: int
+    approval_status: str
+    approval_at: datetime
+    cancel_date: datetime
+    cancel_by: int
+    cancel_at: int
+    cancel_reason: str
+    orderdate: datetime
+    clientType: str
+    ordertakenBy: str
+    created_by: int
+    route_id: int
+    retailer_onboard: bool
+    soconvert_by: int
+    soconvert_at: datetime
+    is_soconvert: int
+    ordermail_flag: int
+    branch: int
+    created_at: datetime
+    updated_at: datetime
+    retailer_unique_id: str
+    taxable_value: str
+    sgst_amount: str
+    cgst_amount: str
+    igst_amount: str
+    vendor_state_id: int
+    retailer_state_id: int
+
+
+class Estimate_salesorder_details(BaseModel):
+    __tablename__ = 'estimate_salesorder_details'
+    id: int
+    so_no: str
+    orderid: str
+    vendor_id: int
+    retailer_id: int
+    product_id: int
+    product_name: str
+    sku_code: str
+    hsn_code: str
+    preferred_product: bool
+    brand: str
+    minimum_reorder_quantity: int
+    product_description: str
+    inventory_type: str
+    units_name: str
+    category_id: int
+    category_name: str
+    sub_category_id: int
+    sub_category_name: str
+    cost_price: str
+    total_cost_price: str
+    discount: str
+    discount_amount: str
+    total_discount_amount: str
+    gst: str
+    gst_price: str
+    total_gst_price: str
+    cess_extra: str
+    cess_extra_price: str
+    total_cess_extra_price: str
+    tax_amt: str
+    total_tax_amt: str
+    sales_price: str
+    total_sales_price: str
+    total_amt: str
+    value: str
+    quantity: int
+    approval_status: str
+    cancel_date: datetime
+    cancel_by: int
+    cancel_at: int
+    cancel_reason: str
+    active: bool
+    status: bool
+    salesType: str
+    returnId: int
+    return_details_id: int
+    retailer_discount_amount: str
+    retailer_discount: str
+    retailer_discount_type: int
+    onboard_discount_type: int
+    onboard_discount: str
+    onboard_discount_amount: str
+    created_at: datetime
+    updated_at: datetime
+    product_unique_id: str
+    unit_of_measurement: str
+    varient_values: str
+    onboard_discount_value: str
+    single_product_discount_amount: str
+    sgst_price: str
+    cgst_price: str
+    igst_price: str
+    total_sgst_price: str
+    total_cgst_price: str
+    total_igst_price: str
+    taxable_value: str
+    product_discount_amount: str
+    total_product_discount_amount: str
+    retailer_discount_value: str
+    total_retailer_discount_amount: str
+
+
+class Estimate_salesorder_statuses(BaseModel):
+    __tablename__ = 'estimate_salesorder_statuses'
+    id: int
+    sId: str
+    orderid: str
+    invoiceno: str
+    approval_status: str
+    approval_by: int
+    approval_at: datetime
+    orderdate: date
+    orderby: int
+    status: int
+    comments: str
+    clientType: str
+    created_at: datetime
+    updated_at: datetime
+
+
+class Excelretailers(BaseModel):
+    __tablename__ = 'excelretailers'
+    id: int
+    excelid: str
+    companyname: str
+    gstno: str
+    industry_type: str
+    username: str
+    email: str
+    mobilenumber: str
+    address1: str
+    address2: str
+    landmark: str
+    country: str
+    state: str
+    district: str
+    pincode: int
+    branch: str
+    route: str
+    bank_name: str
+    account_number: str
+    account_type: str
+    upi: str
+    ifsc: str
+    tenant_name: str
+    status: int
+    error_details: str
+    created_at: datetime
+    updated_at: datetime
+    edit_retailer_id: int
+    edit_row: int
+    referrence: str
+    category: str
+    subcategory: str
+    credit_days: str
+    payment_mode: str
+    remarks: str
+    state_id: int
+
+
+class Excel_products(BaseModel):
+    __tablename__ = 'excel_products'
+    id: int
+    productid: str
+    excelid: str
+    product_name: str
+    sku_code: str
+    hsn_code: str
+    preferred_product: bool
+    brand: str
+    inventory_type: str
+    categorie: str
+    subcategorie: str
+    unit: str
+    value: str
+    cost_price: str
+    discount: str
+    discount_amount: str
+    gst: str
+    gst_price: str
+    cess_extra: str
+    cess_extra_price: str
+    total_tax_amt: str
+    sales_price: str
+    minimum_reorder_quantity: str
+    comments: str
+    product_description: str
+    status: bool
+    error_details: str
+    created_at: datetime
+    updated_at: datetime
+    unit_of_measurement: str
+    varient_values: str
+
+
+class Failed_jobs(BaseModel):
+    __tablename__ = 'failed_jobs'
+    id: int
+    uuid: str
+    connection: str
+    queue: str
+    payload: str
+    exception: str
+    failed_at: datetime
+
+
+class Industry_types(BaseModel):
+    __tablename__ = 'industry_types'
+    id: int
+    name: str
+    active: bool
+    created_at: datetime
+    updated_at: datetime
+    deleted_at: datetime
+
+
+class Inventor_types(BaseModel):
+    __tablename__ = 'inventor_types'
+    id: int
+    name: str
+    active: bool
+    created_at: datetime
+    updated_at: datetime
+    deleted_at: datetime
+
+
+class Invoice_details(BaseModel):
+    __tablename__ = 'invoice_details'
+    id: int
+    so_id: int
+    invoiceno: str
+    invoice_date: date
+    dispatch_date: datetime
+    creditamount: str
+    cancel_date: datetime
+    cancel_by: int
+    cancel_at: int
+    cancel_reason: str
+    due_date: date
+    deliverydate: date
+    freight_amount: str
+    packaging_amount: str
+    gross_total_amount: str
+    discount_amount: str
+    gst_amount: str
+    packing_gst_amount: str
+    cess_extra_amount: str
+    payable_amount: str
+    total_payable_amount: str
+    branch: int
+    branch_name: str
+    branch_officetype: str
+    branch_currency: str
+    branch_conductnumber: str
+    branch_mobilenumber: str
+    branch_email: str
+    branch_address1: str
+    branch_address2: str
+    branch_landmark: str
+    branch_country: str
+    branch_state: str
+    branch_district: str
+    branch_pincode: str
+    branch_geo_tag: str
+    branch_bank_name: str
+    branch_account_number: str
+    branch_account_type: str
+    branch_upi: str
+    branch_ifsc: str
+    user: int
+    executive_name: str
+    executive_email: str
+    executive_mobilenumber: str
+    executive_user_role: str
+    payment_terms: str
+    irn_number: str
+    eway_bill: str
+    approval_at: datetime
+    approval_by: int
+    approval_status: str
+    active: bool
+    total_paid_amount: str
+    paid_flag: int
+    email_flag: int
+    status: int
+    client_id: int
+    clientType: int
+    reference: str
+    invoice_link: str
+    created_at: datetime
+    updated_at: datetime
+    sales_deliverydate: datetime
+    invoice_status: str
+    vendor_code: str
+    tally_sales_id: str
+    voucher_id: str
+    voucher_no: str
+    voucher_type: str
+    ledger: str
+    ledger_code: str
+    narration: str
+    tally_processing_flag: int
+    tally_created_by: int
+    tally_created_at: datetime
+    tally_description: str
+    retailer_route_id: int
+    sgst_amount: str
+    cgst_amount: str
+    igst_amount: str
+    taxable_value: str
+    vehicle_number: str
+    other_details: str
+    comments: str
+    route_ordertaken_by: str
+
+
+class Invoice_product_details(BaseModel):
+    __tablename__ = 'invoice_product_details'
+    id: int
+    so_id: int
+    so_details_id: int
+    inv_id: int
+    cost_price: str
+    quantity: int
+    total_cost_price: str
+    discount: str
+    discount_amount: str
+    total_discount_amount: str
+    gst: str
+    gst_price: str
+    total_gst_price: str
+    cess_extra: str
+    cess_extra_price: str
+    total_cess_extra_price: str
+    tax_amt: str
+    total_tax_amt: str
+    sales_price: str
+    total_sales_price: str
+    approval_status: str
+    active: bool
+    status: int
+    return_date: datetime
+    return_by: int
+    return_at: int
+    return_type: int
+    return_reason: str
+    cancel_date: datetime
+    cancel_by: int
+    cancel_at: int
+    cancel_reason: str
+    retailer_discount_amount: str
+    retailer_discount: str
+    retailer_discount_type: int
+    created_at: datetime
+    updated_at: datetime
+    onboard_discount_type: int
+    onboard_discount: str
+    onboard_discount_amount: str
+    totel_return_quantity: int
+    retailer_id: int
+    onboard_discount_value: str
+    single_product_discount_amount: str
+    retailer_route_id: int
+    sgst_price: str
+    cgst_price: str
+    igst_price: str
+    total_sgst_price: str
+    total_cgst_price: str
+    total_igst_price: str
+    product_discount_amount: str
+    total_product_discount_amount: str
+    retailer_discount_value: str
+    total_retailer_discount_amount: str
+    taxable_value: str
+    product_id: int
+
+
+class Invoice_product_returns(BaseModel):
+    __tablename__ = 'invoice_product_returns'
+    id: int
+    so_id: int
+    so_details_id: int
+    inv_id: int
+    inv_product_id: int
+    cost_price: str
+    quantity: int
+    total_cost_price: str
+    discount: str
+    discount_amount: str
+    total_discount_amount: str
+    gst: str
+    gst_price: str
+    total_gst_price: str
+    cess_extra: str
+    cess_extra_price: str
+    total_cess_extra_price: str
+    tax_amt: str
+    total_tax_amt: str
+    sales_price: str
+    total_sales_price: str
+    approval_status: str
+    active: bool
+    status: int
+    reason: str
+    return_at: datetime
+    return_by: int
+    return_type: int
+    created_at: datetime
+    updated_at: datetime
+
+
+class Invoice_statuses(BaseModel):
+    __tablename__ = 'invoice_statuses'
+    id: int
+    inv_id: str
+    approval_status: str
+    approval_by: int
+    approval_at: datetime
+    status: int
+    created_at: datetime
+    updated_at: datetime
+
+
+class Jobs(BaseModel):
+    __tablename__ = 'jobs'
+    id: int
+    queue: str
+    payload: str
+    attempts: bool
+    reserved_at: int
+    available_at: int
+    created_at: int
+
+
+class Main_permissions(BaseModel):
+    __tablename__ = 'main_permissions'
+    id: int
+    name: str
+    created_at: datetime
+    updated_at: datetime
+
+
+class Migrations(BaseModel):
+    __tablename__ = 'migrations'
+    id: int
+    migration: str
+    batch: int
+
+
+class Notification_details(BaseModel):
+    __tablename__ = 'notification_details'
+    id: int
+    user_id: int
+    notification_type: str
+    title: str
+    description: str
+    response: str
+    status_type: str
+    created_by: int
+    created_at: datetime
+    updated_at: datetime
+    targeturl: str
+
+
+class Oauth_access_tokens(BaseModel):
+    __tablename__ = 'oauth_access_tokens'
+    id: str
+    user_id: int
+    client_id: int
+    name: str
+    scopes: str
+    revoked: bool
+    created_at: datetime
+    updated_at: datetime
+    expires_at: datetime
+
+
+class Oauth_auth_codes(BaseModel):
+    __tablename__ = 'oauth_auth_codes'
+    id: str
+    user_id: int
+    client_id: int
+    scopes: str
+    revoked: bool
+    expires_at: datetime
+
+
+class Oauth_clients(BaseModel):
+    __tablename__ = 'oauth_clients'
+    id: int
+    user_id: int
+    name: str
+    secret: str
+    provider: str
+    redirect: str
+    personal_access_client: bool
+    password_client: bool
+    revoked: bool
+    created_at: datetime
+    updated_at: datetime
+
+
+class Oauth_personal_access_clients(BaseModel):
+    __tablename__ = 'oauth_personal_access_clients'
+    id: int
+    client_id: int
+    created_at: datetime
+    updated_at: datetime
+
+
+class Oauth_refresh_tokens(BaseModel):
+    __tablename__ = 'oauth_refresh_tokens'
+    id: str
+    access_token_id: str
+    revoked: bool
+    expires_at: datetime
+
+
+class Office_types(BaseModel):
+    __tablename__ = 'office_types'
+    id: int
+    name: str
+    active: bool
+    created_at: datetime
+    updated_at: datetime
+    deleted_at: datetime
+
+
+class Old_track_attendances(BaseModel):
+    __tablename__ = 'old_track_attendances'
+    id: int
+    user_id: int
+    attence: datetime
+    punch: str
+    task_id: int
+    kilometer: str
+    latitude: str
+    longitude: str
+    createAPI: datetime
+    time_taken: str
+    reference: str
+    created_at: datetime
+    updated_at: datetime
+
+
+class Order_takens(BaseModel):
+    __tablename__ = 'order_takens'
+    id: int
+    order_takens_name: str
+    active: int
+    created_at: datetime
+    updated_at: datetime
+
+
+class Otp_verfications(BaseModel):
+    __tablename__ = 'otp_verfications'
+    id: int
+    mobilenumber: str
+    user_id: str
+    otp: str
+    details: str
+    status: str
+    active: int
+    expiry_at: datetime
+    created_at: datetime
+    updated_at: datetime
+    otp_sent_type: int
+
+
+class Password_resets(BaseModel):
+    __tablename__ = 'password_resets'
+    email: str
+    token: str
+    created_at: datetime
+
+
+class Payments(BaseModel):
+    __tablename__ = 'payments'
+    id: int
+    payment_receiptnumber: str
+    payment_receipt: str
+    receipt_date: date
+    payment_method: str
+    bank_name: str
+    dd_cheque_account_number: str
+    dd_cheque_account_date: date
+    dd_cheque_account_issue_date: date
+    payment_comments: str
+    payment_amount: str
+    ifsc_code: str
+    paid_date: date
+    comments: str
+    total_invoice_amount: str
+    total_current_amount: str
+    total_already_amount: str
+    total_balance_due: str
+    office_id: int
+    office_name: str
+    office_logo: str
+    office_username: str
+    office_gst_no: str
+    office_mobilenumber: str
+    office_email: str
+    office_currency: str
+    office_address1: str
+    office_address2: str
+    office_landmark: str
+    office_country: str
+    office_state: str
+    office_district: str
+    office_pincode: str
+    office_geo_tag: str
+    office_webaddress: str
+    bill_client_id: int
+    bill_companyname: str
+    bill_username: str
+    bill_gst_no: str
+    bill_mobilenumber: str
+    bill_email: str
+    bill_currency: str
+    bill_address1: str
+    bill_address2: str
+    bill_landmark: str
+    bill_country: str
+    bill_state: str
+    bill_district: str
+    bill_pincode: str
+    bill_geo_tag: str
+    bill_webaddress: str
+    user: int
+    executive_name: str
+    executive_email: str
+    executive_mobilenumber: str
+    executive_user_role: str
+    branch: int
+    branch_name: str
+    branch_officetype: str
+    branch_currency: str
+    branch_conductnumber: str
+    branch_mobilenumber: str
+    branch_email: str
+    branch_address1: str
+    branch_address2: str
+    branch_landmark: str
+    branch_country: str
+    branch_state: str
+    branch_district: str
+    branch_pincode: str
+    branch_geo_tag: str
+    branch_bank_name: str
+    branch_account_number: str
+    branch_account_type: str
+    branch_upi: str
+    branch_ifsc: str
+    cancel_date: datetime
+    cancel_by: int
+    cancelType: int
+    cancel_reason: str
+    clientType: int
+    created_by: int
+    approval_by: int
+    approval_at: datetime
+    is_approved: int
+    status: int
+    paymentType: str
+    approval_status: str
+    reference: str
+    payment_link: str
+    created_at: datetime
+    updated_at: datetime
+    paid_at: datetime
+    paid_by: int
+    tally_processing_flag: int
+    tally_created_by: int
+    tally_created_at: datetime
+    voucher_id: str
+    voucher_no: str
+    voucher_type: str
+    dr_ledger_group: str
+    dr_ledger: str
+    dr_ledger_code: str
+    cr_ledger_group: str
+    cr_ledger: str
+    cr_ledger_code: str
+    narration: str
+    tally_receipt_id: str
+    retailer_unique_id: str
+    tally_description: str
+    credit_amount: str
+    creditnote_id: int
+    creditnoteid: str
+    retailer_route_id: int
+
+
+class Payment_datails(BaseModel):
+    __tablename__ = 'payment_datails'
+    id: int
+    payment_id: int
+    invoice_id: int
+    invoice_number: str
+    invoice_date: date
+    payment_due_date: date
+    clientType: int
+    invoice_amount: str
+    current_paid_amount: str
+    already_paid_amount: str
+    balance_due: str
+    total_paid_amount: str
+    paid_date: date
+    approval_status: str
+    cancel_date: datetime
+    cancel_by: int
+    cancelType: int
+    cancel_reason: str
+    status: int
+    created_at: datetime
+    updated_at: datetime
+    payment_method: str
+    tally_receipt_id: str
+    tally_processing_flag: int
+    tally_created_by: int
+    tally_created_at: datetime
+    tally_description: str
+    credit_amount: str
+    creditnote_id: int
+    creditnoteid: str
+
+
+class Payment_statuses(BaseModel):
+    __tablename__ = 'payment_statuses'
+    id: int
+    payment_id: int
+    comments: str
+    clientType: str
+    approval_status: str
+    approval_by: int
+    approval_at: datetime
+    created_at: datetime
+    updated_at: datetime
+
+
+class Permissions(BaseModel):
+    __tablename__ = 'permissions'
+    id: int
+    name: str
+    display_name: str
+    description: str
+    created_at: datetime
+    updated_at: datetime
+    main_id: int
+    sub_id: int
+
+
+class Permission_role(BaseModel):
+    __tablename__ = 'permission_role'
+    permission_id: int
+    role_id: int
+
+
+class Products(BaseModel):
+    __tablename__ = 'products'
+    id: int
+    product_name: str
+    productid: str
+    sku_code: str
+    hsn_code: str
+    preferred_product: bool
+    brand: str
+    inventory_type: str
+    listed_product: bool
+    categorie_id: int
+    subcategorie_id: int
+    unit: str
+    value: str
+    cost_price: str
+    discount: str
+    discount_amount: str
+    gst: str
+    gst_price: str
+    cess_extra: str
+    cess_extra_price: str
+    total_tax_amt: str
+    sales_price: str
+    minimum_reorder_quantity: str
+    comments: str
+    onboard: int
+    product_description: str
+    active: bool
+    created_by: int
+    deleted_by: int
+    created_at: datetime
+    updated_at: datetime
+    deleted_at: datetime
+    tally_item_code: str
+    tally_item_closing_stock: int
+    product_stock: int
+    unit_of_measurement: str
+    varient_values: str
+
+
+class Product_returns(BaseModel):
+    __tablename__ = 'product_returns'
+    id: int
+    orderid: str
+    returnid: str
+    returndate: datetime
+    approval_status: str
+    gross_total_amount: str
+    discount_amount: str
+    gst_amount: str
+    cess_extra_amount: str
+    payable_amount: str
+    total_payable_amount: str
+    total_paid_amount: str
+    returnType: str
+    vendor_id: int
+    retailer_id: int
+    active: bool
+    status: int
+    paid_flag: int
+    created_at: datetime
+    updated_at: datetime
+
+
+class Product_return_details(BaseModel):
+    __tablename__ = 'product_return_details'
+    id: int
+    returnid: int
+    soid: int
+    sodetailsid: int
+    product_id: int
+    quantity: int
+    cost_price: str
+    total_cost_price: str
+    discount: str
+    discount_amount: str
+    total_discount_amount: str
+    gst: str
+    gst_price: str
+    total_gst_price: str
+    cess_extra: str
+    cess_extra_price: str
+    total_cess_extra_price: str
+    tax_amt: str
+    total_tax_amt: str
+    sales_price: str
+    total_sales_price: str
+    total_amt: str
+    approval_status: str
+    cancel_date: datetime
+    cancel_by: int
+    cancel_at: int
+    cancel_reason: str
+    active: bool
+    status: int
+    retailer_discount_amount: str
+    retailer_discount: str
+    retailer_discount_type: int
+    created_at: datetime
+    updated_at: datetime
+    onboard_discount_type: int
+    onboard_discount: str
+    onboard_discount_amount: str
+    onboard_discount_value: str
+    retailer_route_id: int
+    retailer_id: int
+    sgst_price: str
+    cgst_price: str
+    igst_price: str
+    total_sgst_price: str
+    total_cgst_price: str
+    total_igst_price: str
+    taxable_value: str
+    product_discount_amount: str
+    total_product_discount_amount: str
+    retailer_discount_value: str
+    total_retailer_discount_amount: str
+    single_product_discount_amount: str
+    approval_by: int
+
+
+class Product_stocks(BaseModel):
+    __tablename__ = 'product_stocks'
+    id: int
+    product_id: int
+    in_stock: int
+    order_stock: int
+    closing_stock: int
+    order_id: int
+    sales_type: str
+    created_at: datetime
+    updated_at: datetime
+    stock_active: int
+    product_name: str
+
+
+class Promotion_banner_images(BaseModel):
+    __tablename__ = 'promotion_banner_images'
+    id: int
+    promotion_id: int
+    image_url: str
+    created_by: int
+    created_username: str
+    status_active: int
+    updated_type: str
+    created_at: datetime
+    updated_at: datetime
+    image_type: int
+
+
+class Promotion_client_histories(BaseModel):
+    __tablename__ = 'promotion_client_histories'
+    id: int
+    promotion_client_list_id: int
+    promotion_id: int
+    client_id: int
+    created_by: int
+    created_username: str
+    created_at: datetime
+    updated_at: datetime
+
+
+class Promotion_client_lists(BaseModel):
+    __tablename__ = 'promotion_client_lists'
+    id: int
+    encrypt_id: str
+    promotion_id: int
+    client_id: int
+    status_active: int
+    created_by: int
+    created_username: str
+    updated_by: int
+    updated_username: str
+    created_at: datetime
+    updated_at: datetime
+    history_count: int
+    is_promotion_completed: int
+
+
+class Promotion_histories(BaseModel):
+    __tablename__ = 'promotion_histories'
+    id: int
+    promotion_id: int
+    client_id: int
+    promotion_client_list_id: int
+    image_url: str
+    comments: str
+    comments_type: int
+    created_type: int
+    created_by: int
+    client_show: int
+    created_username: str
+    status_active: int
+    created_at: datetime
+    updated_at: datetime
+
+
+class Promotion_lists(BaseModel):
+    __tablename__ = 'promotion_lists'
+    id: int
+    promotion_encrypt_url: str
+    promotionid: str
+    promotion_name: str
+    promotion_title: str
+    description: str
+    created_by: int
+    created_username: str
+    updated_by: int
+    updated_username: str
+    status_active: int
+    promotion_completed: int
+    created_at: datetime
+    updated_at: datetime
+
+
+class Promotion_unread_messages(BaseModel):
+    __tablename__ = 'promotion_unread_messages'
+    id: int
+    user_id: int
+    message_id: int
+    unread_count: int
+    client_show: int
+    comments_type: int
+    promotion_id: int
+    promotion_client_id: int
+    created_at: datetime
+    updated_at: datetime
+
+
+class Purchaseorders(BaseModel):
+    __tablename__ = 'purchaseorders'
+    id: int
+    po_no: str
+    orderid: str
+    vendor_id: int
+    retailer_id: int
+    logo_url: str
+    vendor_companyname: str
+    vendor_name: str
+    vendor_gst_no: str
+    vendor_mobilenumber: str
+    vendor_email: str
+    vendor_currency: str
+    vendor_address1: str
+    vendor_address2: str
+    vendor_landmark: str
+    vendor_country: str
+    vendor_state: str
+    vendor_district: str
+    vendor_pincode: str
+    vendor_geo_tag: str
+    gross_total_amount: str
+    discount_amount: str
+    gst_amount: str
+    cess_extra_amount: str
+    freight_amount: str
+    packaging_amount: str
+    packaging_gst: str
+    payable_amount: str
+    total_payable_amount: str
+    total_paid_amount: str
+    approval_by: int
+    is_approved: int
+    approval_status: str
+    approval_at: datetime
+    cancel_date: datetime
+    cancel_by: int
+    cancel_at: int
+    cancel_reason: str
+    paid_flag: int
+    active: bool
+    status: int
+    orderdate: datetime
+    deliverydate: datetime
+    clientType: str
+    created_at: datetime
+    updated_at: datetime
+    retailer_unique: str
+    estimate_order: str
+    estimate_so_no: str
+    estimate_id: int
+    retailer_unique_id: str
+    sgst_amount: str
+    cgst_amount: str
+    igst_amount: str
+
+
+class Purchaseorder_details(BaseModel):
+    __tablename__ = 'purchaseorder_details'
+    id: int
+    po_no: str
+    orderid: str
+    vendor_id: int
+    retailer_id: int
+    product_id: int
+    product_name: str
+    sku_code: str
+    hsn_code: str
+    preferred_product: bool
+    brand: str
+    minimum_reorder_quantity: str
+    product_description: str
+    inventory_type: str
+    units_name: str
+    category_id: int
+    category_name: str
+    sub_category_id: int
+    sub_category_name: str
+    cost_price: str
+    total_cost_price: str
+    discount: str
+    discount_amount: str
+    total_discount_amount: str
+    gst: str
+    gst_price: str
+    total_gst_price: str
+    cess_extra: str
+    cess_extra_price: str
+    total_cess_extra_price: str
+    tax_amt: str
+    total_tax_amt: str
+    sales_price: str
+    total_sales_price: str
+    total_amt: str
+    value: str
+    quantity: int
+    approval_status: str
+    cancel_date: datetime
+    cancel_by: int
+    cancel_at: int
+    cancel_reason: str
+    salesType: str
+    returnId: int
+    return_details_id: int
+    retailer_discount_amount: str
+    retailer_discount: str
+    retailer_discount_type: int
+    created_at: datetime
+    updated_at: datetime
+    onboard_discount_type: int
+    onboard_discount: str
+    onboard_discount_amount: str
+    product_unique_id: str
+    onboard_discount_value: str
+    sgst_price: str
+    cgst_price: str
+    igst_price: str
+    total_sgst_price: str
+    total_cgst_price: str
+    total_igst_price: str
+
+
+class Purchaseorder_statuses(BaseModel):
+    __tablename__ = 'purchaseorder_statuses'
+    id: int
+    pId: str
+    orderid: str
+    orderdate: date
+    invoiceno: str
+    approval_status: str
+    approval_by: int
+    approval_at: datetime
+    reference: str
+    orderby: int
+    status: int
+    created_at: datetime
+    updated_at: datetime
+
+
+class Purchase_payments(BaseModel):
+    __tablename__ = 'purchase_payments'
+    id: int
+    payment_receipt: str
+    receipt_date: date
+    total_invoice_amount: str
+    total_current_amount: str
+    total_already_amount: str
+    total_balance_due: str
+    office_id: int
+    bill_client_id: int
+    approval_status: str
+    created_at: datetime
+    updated_at: datetime
+
+
+class Rejected_reasons(BaseModel):
+    __tablename__ = 'rejected_reasons'
+    id: int
+    description: str
+    type: str
+    active: bool
+    created_at: datetime
+    updated_at: datetime
+
+
+class Renewal_histories(BaseModel):
+    __tablename__ = 'renewal_histories'
+    id: int
+    vendor_id: int
+    start_date: date
+    end_date: date
+    duration_month: int
+    gst: int
+    maintanance_license_cost: str
+    paid_amount: str
+    approval_status: str
+    status: str
+    receipt_id: str
+    created_at: datetime
+    updated_at: datetime
+    deleted_at: datetime
+
+
+class Retailers(BaseModel):
+    __tablename__ = 'retailers'
+    id: int
+    companyname: str
+    gstno: str
+    retailerId: str
+    username: str
+    mobilenumber: str
+    email: str
+    password: str
+    pincode: int
+    doj: date
+    companytype: str
+    officetype: str
+    active: bool
+    device_type: str
+    device_version: str
+    status: int
+    login_at: datetime
+    login_count: int
+    login_status: bool
+    login_password_errorcount: int
+    geo_tag: str
+    currency: str
+    office_type: str
+    address1: str
+    address2: str
+    landmark: str
+    country: str
+    state: str
+    district: str
+    bank_name: str
+    account_number: str
+    account_type: str
+    upi: str
+    ifsc: str
+    session_id: str
+    retailerType: str
+    remember_token: str
+    created_at: datetime
+    updated_at: datetime
+    deleted_at: datetime
+    latitude: str
+    longitude: str
+    vendorType: str
+    vendorId: int
+    email_cron: int
+    referrence_password: str
+    state_id: int
+    map_address: str
+
+
+class Retailer_activites(BaseModel):
+    __tablename__ = 'retailer_activites'
+    id: int
+    retailer_id: int
+    reference_id: int
+    so_no: str
+    orderid: str
+    total_payable_amount: str
+    task_type: str
+    approval_status: str
+    description: str
+    created_by: int
+    created_at: datetime
+    updated_at: datetime
+
+
+class Retailer_cash_details(BaseModel):
+    __tablename__ = 'retailer_cash_details'
+    id: int
+    retailer_cash_payment_id: int
+    payment_receipt: str
+    receipt_date: date
+    payment_method: str
+    paid_amount: str
+    paid_date: date
+    comments: str
+    retailer_id: int
+    vendor_id: int
+    created_by: int
+    approval_status: str
+    created_at: datetime
+    updated_at: datetime
+
+
+class Retailer_cash_payments(BaseModel):
+    __tablename__ = 'retailer_cash_payments'
+    id: int
+    payment_receiptnumber: str
+    payment_receipt: str
+    receipt_date: date
+    payment_method: str
+    paid_amount: str
+    paid_date: date
+    comments: str
+    retailer_id: int
+    created_by: int
+    created_at: datetime
+    updated_at: datetime
+    approval_status: str
+    tally_payment_id: str
+    tally_processing_flag: int
+    tally_created_by: int
+    tally_created_at: datetime
+    tally_description: str
+
+
+class Retailer_categories(BaseModel):
+    __tablename__ = 'retailer_categories'
+    id: int
+    category: str
+    active: bool
+    created_at: datetime
+    updated_at: datetime
+
+
+class Retailer_industries(BaseModel):
+    __tablename__ = 'retailer_industries'
+    id: int
+    industry_types_id: int
+    retailer_id: int
+    active: bool
+    created_at: datetime
+    updated_at: datetime
+
+
+class Retailer_outstandings(BaseModel):
+    __tablename__ = 'retailer_outstandings'
+    id: int
+    retailer_id: int
+    RetailerName: str
+    invoiceno: str
+    invoice_date: date
+    DueDate: date
+    pending_amount: str
+    active: int
+    created_at: datetime
+    updated_at: datetime
+
+
+class Retailer_product_discounts(BaseModel):
+    __tablename__ = 'retailer_product_discounts'
+    id: int
+    retailer_id: int
+    product_id: int
+    discount_type: int
+    discount_amount: str
+    status: int
+    created_at: datetime
+    updated_at: datetime
+
+
+class Retailer_subcategories(BaseModel):
+    __tablename__ = 'retailer_subcategories'
+    id: int
+    categorie_id: int
+    subcategory: str
+    active: bool
+    created_at: datetime
+    updated_at: datetime
+
+
+class Retailer_vendors(BaseModel):
+    __tablename__ = 'retailer_vendors'
+    id: int
+    retailer_id: int
+    vendor_id: int
+    request_at: datetime
+    approval_status: str
+    approval_by: int
+    approval_at: datetime
+    active: bool
+    like: bool
+    status: bool
+    resent: int
+    request_givenby: int
+    created_at: datetime
+    updated_at: datetime
+    vendor_active: int
+    branch: int
+    route_id: int
+    route_orderby: int
+
+
+class Retailer_vendor_notifies(BaseModel):
+    __tablename__ = 'retailer_vendor_notifies'
+    id: int
+    retailer_id: int
+    vendor_id: int
+    active: bool
+    created_at: datetime
+    updated_at: datetime
+
+
+class Return_statuses(BaseModel):
+    __tablename__ = 'return_statuses'
+    id: int
+    return_id: int
+    comments: str
+    clientType: str
+    approval_status: str
+    approval_by: int
+    approval_at: datetime
+    created_at: datetime
+    updated_at: datetime
+
+
+class Roles(BaseModel):
+    __tablename__ = 'roles'
+    id: int
+    role_code: str
+    role_name: str
+    active: bool
+    created_at: datetime
+    updated_at: datetime
+    deleted_at: datetime
+    name: str
+    display_name: str
+    description: str
+
+
+class Role_user(BaseModel):
+    __tablename__ = 'role_user'
+    role_id: int
+    user_id: int
+
+
+class Routes(BaseModel):
+    __tablename__ = 'routes'
+    id: int
+    name: str
+    active: bool
+    created_at: datetime
+    updated_at: datetime
+
+
+class Route_task_allocates(BaseModel):
+    __tablename__ = 'route_task_allocates'
+    id: int
+    route_id: int
+    retailer_id: int
+    task_date: date
+    task_type: str
+    approval_status: str
+    active: bool
+    user_id: int
+    attence_user_id: int
+    attence: datetime
+    reference_id: int
+    latitude: str
+    longitude: str
+    cancel_reason: str
+    cancel_date: datetime
+    cancel_by: int
+    created_at: datetime
+    updated_at: datetime
+    description: str
+    reason: str
+    kilometer: str
+    task_order: int
+    task_allocates_type: str
+    time_taken: str
+    map_address: str
+    reminder_at: datetime
+    notification_cron: int
+
+
+class Route_user_allocates(BaseModel):
+    __tablename__ = 'route_user_allocates'
+    id: int
+    route_id: int
+    user_id: int
+    status: int
+    created_at: datetime
+    updated_at: datetime
+    updated_by: int
+    updated_type: int
+
+
+class Salesorders(BaseModel):
+    __tablename__ = 'salesorders'
+    id: int
+    so_no: str
+    orderid: str
+    retailer_id: int
+    retailer_company: str
+    retailer_name: str
+    retailer_gstno: str
+    retailer_mobilenumber: str
+    retailer_email: str
+    retailer_pincode: int
+    retailer_currency: str
+    retailer_address1: str
+    retailer_address2: str
+    retailer_landmark: str
+    retailer_country: str
+    retailer_state: str
+    retailer_district: str
+    retailer_bank_name: str
+    retailer_account_number: str
+    retailer_account_type: str
+    retailer_upi: str
+    retailer_ifsc: str
+    vendor_id: int
+    vendor_name: str
+    vendor_companyname: str
+    logo_url: str
+    vendor_gst_no: str
+    vendor_mobilenumber: str
+    vendor_email: str
+    vendor_currency: str
+    vendor_address1: str
+    vendor_address2: str
+    vendor_landmark: str
+    vendor_country: str
+    vendor_state: str
+    vendor_district: str
+    vendor_pincode: str
+    vendor_geo_tag: str
+    freight_amount: str
+    packaging_amount: str
+    packaging_gst: str
+    gross_total_amount: str
+    discount_amount: str
+    gst_amount: str
+    cess_extra_amount: str
+    payable_amount: str
+    total_payable_amount: str
+    total_paid_amount: str
+    is_approved: int
+    approval_by: int
+    approval_status: str
+    approval_at: datetime
+    cancel_date: datetime
+    cancel_by: int
+    cancel_at: int
+    cancel_reason: str
+    active: bool
+    status: int
+    paid_flag: int
+    orderdate: datetime
+    deliverydate: datetime
+    clientType: str
+    ordertakenBy: str
+    created_at: datetime
+    updated_at: datetime
+    created_by: int
+    route_id: int
+    retailer_onboard: bool
+    delivery_flag: int
+    ordermail_flag: int
+    branch: int
+    tally_processing_flag: int
+    tally_created_by: int
+    tally_created_at: datetime
+    voucher_id: str
+    voucher_no: str
+    voucher_type: str
+    ledger: str
+    ledger_code: str
+    narration: str
+    retailer_unique: str
+    estimate_order: str
+    estimate_so_no: str
+    estimate_id: int
+    retailer_unique_id: str
+    user_route_id: int
+    route_ordertaken_by: str
+    sgst_amount: str
+    cgst_amount: str
+    igst_amount: str
+    taxable_value: str
+    vendor_state_id: int
+    retailer_state_id: int
+
+
+class Salesorder_details(BaseModel):
+    __tablename__ = 'salesorder_details'
+    id: int
+    so_no: str
+    orderid: str
+    vendor_id: int
+    retailer_id: int
+    product_id: int
+    product_name: str
+    sku_code: str
+    hsn_code: str
+    preferred_product: bool
+    brand: str
+    minimum_reorder_quantity: int
+    product_description: str
+    inventory_type: str
+    units_name: str
+    category_id: int
+    category_name: str
+    sub_category_id: int
+    sub_category_name: str
+    cost_price: str
+    total_cost_price: str
+    discount: str
+    discount_amount: str
+    total_discount_amount: str
+    gst: str
+    gst_price: str
+    total_gst_price: str
+    cess_extra: str
+    cess_extra_price: str
+    total_cess_extra_price: str
+    tax_amt: str
+    total_tax_amt: str
+    sales_price: str
+    total_sales_price: str
+    total_amt: str
+    value: str
+    quantity: int
+    approval_status: str
+    cancel_date: datetime
+    cancel_by: int
+    cancel_at: int
+    cancel_reason: str
+    active: bool
+    status: bool
+    salesType: str
+    returnId: int
+    return_details_id: int
+    retailer_discount_amount: str
+    retailer_discount: str
+    retailer_discount_type: int
+    created_at: datetime
+    updated_at: datetime
+    onboard_discount_type: int
+    onboard_discount: str
+    onboard_discount_amount: str
+    tally_item_code: str
+    product_unique_id: str
+    approval_by: int
+    approval_at: datetime
+    user_route_id: int
+    retailer_route_id: int
+    unit_of_measurement: str
+    varient_values: str
+    onboard_discount_value: str
+    product_discount_amount: str
+    total_product_discount_amount: str
+    retailer_discount_value: str
+    total_retailer_discount_amount: str
+    single_product_discount_amount: str
+    sgst_price: str
+    cgst_price: str
+    igst_price: str
+    total_sgst_price: str
+    total_cgst_price: str
+    total_igst_price: str
+    taxable_value: str
+
+
+class Salesorder_statuses(BaseModel):
+    __tablename__ = 'salesorder_statuses'
+    id: int
+    sId: str
+    orderid: str
+    invoiceno: str
+    approval_status: str
+    approval_by: int
+    approval_at: datetime
+    orderdate: date
+    orderby: int
+    status: int
+    created_at: datetime
+    updated_at: datetime
+    comments: str
+    clientType: str
+
+
+class Service_tickets(BaseModel):
+    __tablename__ = 'service_tickets'
+    id: int
+    ticketid: str
+    retailer_id: int
+    retailer_type: str
+    route_id: int
+    purpose_id: int
+    purpose_name: str
+    approval_status_id: int
+    approval_status: str
+    ticket_date: date
+    description: str
+    user_id: int
+    comments_show: int
+    rating_task_completed: int
+    rating_created_by: int
+    rating_created_flag: int
+    rating_date: datetime
+    star_rating: int
+    rating_description: str
+    created_by: int
+    created_username: str
+    updated_by: int
+    updated_username: str
+    status_active: int
+    created_at: datetime
+    updated_at: datetime
+    charges: str
+    gst_percentage: str
+    total_price: str
+
+
+class Service_ticket_histories(BaseModel):
+    __tablename__ = 'service_ticket_histories'
+    id: int
+    service_tickets_id: int
+    retailer_id: int
+    assiged_user_id: int
+    approval_status: str
+    image_url: str
+    comments: str
+    comments_type: int
+    created_type: int
+    created_by: int
+    created_username: str
+    status_active: int
+    created_at: datetime
+    updated_at: datetime
+    client_show: int
+
+
+class Service_ticket_purposes(BaseModel):
+    __tablename__ = 'service_ticket_purposes'
+    id: int
+    purpose_name: str
+    order_list: int
+    active: int
+    created_at: datetime
+    updated_at: datetime
+
+
+class Service_ticket_statuses(BaseModel):
+    __tablename__ = 'service_ticket_statuses'
+    id: int
+    status_name: str
+    order_list: int
+    active: int
+    created_at: datetime
+    updated_at: datetime
+
+
+class Service_ticket_unread_messages(BaseModel):
+    __tablename__ = 'service_ticket_unread_messages'
+    id: int
+    user_id: int
+    message_id: int
+    unread_count: int
+    client_show: int
+    comments_type: int
+    created_at: datetime
+    updated_at: datetime
+    service_tickets_id: int
+
+
+class Standalone_retailers(BaseModel):
+    __tablename__ = 'standalone_retailers'
+    id: int
+    companyname: str
+    mobilenumber: str
+    email: str
+    doj: date
+    active: bool
+    created_by: int
+    created_at: datetime
+    updated_at: datetime
+
+
+class Standalone_retailer_products(BaseModel):
+    __tablename__ = 'standalone_retailer_products'
+    id: int
+    standalone_retailer_id: int
+    product_id: int
+    existing_quantity: str
+    new_quantity: str
+    sales: str
+    status: int
+    created_at: datetime
+    updated_at: datetime
+
+
+class States(BaseModel):
+    __tablename__ = 'states'
+    id: int
+    country_id: str
+    state_name: str
+    created_at: datetime
+    updated_at: datetime
+    deleted_at: datetime
+
+
+class Subscriptions(BaseModel):
+    __tablename__ = 'subscriptions'
+    id: int
+    duration_month: int
+    maintanance_license_cost: str
+    retailer_license_cost: str
+    gst: int
+    status: str
+    active: bool
+    created_at: datetime
+    updated_at: datetime
+    deleted_at: datetime
+
+
+class Sub_categories(BaseModel):
+    __tablename__ = 'sub_categories'
+    id: int
+    categorie_id: int
+    subcategory: str
+    active: bool
+    created_at: datetime
+    updated_at: datetime
+    deleted_at: datetime
+
+
+class Tally_processing_lists(BaseModel):
+    __tablename__ = 'tally_processing_lists'
+    id: int
+    type_name: str
+    type_count: int
+    active_status: int
+    created_at: datetime
+    updated_at: datetime
+
+
+class Tasks(BaseModel):
+    __tablename__ = 'tasks'
+    id: int
+    name: str
+    active: bool
+    created_at: datetime
+    updated_at: datetime
+
+
+class Task_details(BaseModel):
+    __tablename__ = 'task_details'
+    id: int
+    invoice_id: int
+    approval_status: str
+    cancel_reason: str
+    cancel_date: datetime
+    cancel_by: int
+    active: bool
+    created_at: datetime
+    updated_at: datetime
+    task_id: int
+    delivery_date: datetime
+    description: str
+    reason: str
+
+
+class Tenants(BaseModel):
+    __tablename__ = 'tenants'
+    id: str
+    created_at: datetime
+    updated_at: datetime
+    data: str
+
+
+class Tenantusers(BaseModel):
+    __tablename__ = 'tenantusers'
+    id: int
+    username: str
+    email: str
+    password: str
+    created_at: datetime
+    updated_at: datetime
+
+
+class Track_attendances(BaseModel):
+    __tablename__ = 'track_attendances'
+    id: int
+    user_id: int
+    attence: datetime
+    task_id: int
+    kilometer: str
+    latitude: str
+    longitude: str
+    createAPI: datetime
+    created_at: datetime
+    updated_at: datetime
+    punch: str
+    time_taken: str
+    reference: str
+    battery_life: str
+    gps_datetime: datetime
+    accuracy: str
+    altitude: str
+    floor: str
+    heading: str
+    speed: str
+    speed_accuracy: str
+    is_mocked: bool
+    gps_type: str
+    gps_status: str
+    internet_state: str
+    punch_active: int
+    attence_status: int
+    event_id: int
+    fcm_token: str
+    kilometer_status: bool
+    session_id: int
+    cron_force_logout: int
+    route_id: int
+    distance: str
+    is_accurate: bool
+
+
+class Track_attendance_backups(BaseModel):
+    __tablename__ = 'track_attendance_backups'
+    id: int
+    user_id: int
+    attence: datetime
+    task_id: int
+    kilometer: str
+    latitude: str
+    longitude: str
+    createAPI: datetime
+    created_at: datetime
+    updated_at: datetime
+    punch: str
+    time_taken: str
+    reference: str
+    battery_life: str
+    gps_datetime: datetime
+    accuracy: str
+    altitude: str
+    floor: str
+    heading: str
+    speed: str
+    speed_accuracy: str
+    is_mocked: bool
+    gps_type: str
+    gps_status: str
+    internet_state: str
+    punch_active: int
+    attence_status: int
+    event_id: int
+    fcm_token: str
+    kilometer_status: bool
+    session_id: int
+    cron_force_logout: int
+    route_id: int
+    distance: str
+    is_accurate: bool
+
+
+class Track_attendance_backups1(BaseModel):
+    __tablename__ = 'track_attendance_backups1'
+    id: int
+    user_id: int
+    attence: datetime
+    task_id: int
+    kilometer: str
+    latitude: str
+    longitude: str
+    createAPI: datetime
+    created_at: datetime
+    updated_at: datetime
+    punch: str
+    time_taken: str
+    reference: str
+    battery_life: str
+    gps_datetime: datetime
+    accuracy: str
+    altitude: str
+    floor: str
+    heading: str
+    speed: str
+    speed_accuracy: str
+    is_mocked: bool
+    gps_type: str
+    gps_status: str
+    internet_state: str
+    punch_active: int
+    attence_status: int
+    event_id: int
+    fcm_token: str
+    kilometer_status: bool
+    session_id: int
+    cron_force_logout: int
+    route_id: int
+    distance: str
+    is_accurate: bool
+
+
+class Track_listeners(BaseModel):
+    __tablename__ = 'track_listeners'
+    id: int
+    user_id: int
+    attence: datetime
+    punch: str
+    reference: str
+    app_state: str
+    gps_status: str
+    createAPI: datetime
+    time_taken: str
+    created_at: datetime
+    updated_at: datetime
+    foregroundServiceRunning: bool
+    canDrawOverlay: bool
+    BatteryOptimization: bool
+    locationServiceEnabled: bool
+    batteryPercentage: str
+    locationPermissionStatus: str
+    user_active: bool
+    login_attence: datetime
+    logout_attence: datetime
+    latitude: str
+    longitude: str
+
+
+class Travel_mode_allowances(BaseModel):
+    __tablename__ = 'travel_mode_allowances'
+    id: int
+    role_id: int
+    two_wheeler: str
+    four_wheeler: str
+    public_transport: str
+    other_transport1: str
+    other_transport2: str
+    day_allowance: str
+    active: int
+    created_at: datetime
+    updated_at: datetime
+    other_expense: str
+
+
+class Units(BaseModel):
+    __tablename__ = 'units'
+    id: int
+    name: str
+    active: bool
+    created_at: datetime
+    updated_at: datetime
+    deleted_at: datetime
+
+
+class Users(BaseModel):
+    __tablename__ = 'users'
+    id: int
+    companyname: str
+    companylogo: str
+    companyurl: str
+    vendorId: str
+    gstno: str
+    companyemail: str
+    username: str
+    mobilenumber: str
+    useremail: str
+    address1: str
+    address2: str
+    landmark: str
+    country: str
+    state: str
+    district: str
+    pincode: int
+    companytype: str
+    industry_types_id: int
+    password: str
+    doj: datetime
+    expirydate: datetime
+    active: bool
+    approval_status: str
+    approval_by: int
+    approval_at: datetime
+    rejected_by: int
+    rejected_at: datetime
+    subscritionId: int
+    paymentId: int
+    device_type: str
+    device_version: str
+    email_verified_at: datetime
+    login_at: datetime
+    login_count: int
+    remember_token: str
+    created_at: datetime
+    updated_at: datetime
+    deleted_at: datetime
+    vendor_active: int
+    vendor_delete: int
+    state_id: int
+
+
+class User_day_reports(BaseModel):
+    __tablename__ = 'user_day_reports'
+    id: int
+    user_id: int
+    date_report: date
+    time_taken: str
+    kilometer: str
+    travel_allowance: str
+    day_allowance: str
+    total_travel_allowance: str
+    total_allowance: str
+    created_at: datetime
+    updated_at: datetime
+    first_attence: datetime
+    last_attence: datetime
+    manual_kilometer: str
+    created_by: int
+    updated_date: datetime
+    logout_attence: datetime
+    route_id: int
+    odometer_kilometer: str
+    other_expense: str
+    total_odometer_allowance: str
+
+

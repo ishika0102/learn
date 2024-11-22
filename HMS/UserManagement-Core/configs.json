@@ -1,0 +1,13 @@
+{
+        "ListenIP": "127.0.0.1",
+        "ListenPort": "3005",
+        "KeyCloak": {
+                "Realm": "HMS",
+                "BaseUrl": "http://localhost:3000",
+                "RestApi": {
+                        "ClientId": "backend",
+                        "ClientSecret": "hIzwvopZ5jmEI8BtsgOYDxHSGs09kQ7E"
+                },
+                "RealmRS256PublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvk34cdzB+3GACCvr0YLaMw8uawUFH4akXkX/rysoloX3gGXfdttG+lsXapMZlRD2oc2GmKizue3AuEJsDZXAMj89IMPPU7hZFEjes3NPTprOjL5kn07ZbgDXSMINzU4Os0EmCwxDZF0dUmB1fw+OZ58o6of0QIaWo1PMfToPgBW6XYFkyUAGQEBva+b1mPPbEMq5a12DIAoWtPtTgj5O5PsULtqK9MmyFHUhNU+anR/adeJGboq7yz8ajvYOHjVTYe4Olmk4TY7dv+OkGdMnKvni1TUUQo7j31pQBeg+hPptL7PblQgP/gaELIqsyL+brc0woY5pDExW65m2xXchhwIDAQAB"
+        }
+}

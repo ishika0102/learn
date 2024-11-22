@@ -1,0 +1,12 @@
+1. download GO from official website and add go extension in VS code ( NOTE : install go 1.19 or later )
+2. initialize Go module :
+        go mod init bout-go
+
+3. install the required dependencies with: 
+        go get -u github.com/gin-gonic/gin go.mongodb.org/mongo-driver/mongo github.com/joho/godotenv github.com/go-playground/validator/v10
+
+        here : 
+        github.com/gin-gonic/gin is a framework for building web applications.
+        go.mongodb.org/mongo-driver/mongo is a driver for connecting to MongoDB.
+        github.com/joho/godotenv is a library for managing environment variables.
+        github.com/go-playground/validator/v10 is a library for validating structs and fields.

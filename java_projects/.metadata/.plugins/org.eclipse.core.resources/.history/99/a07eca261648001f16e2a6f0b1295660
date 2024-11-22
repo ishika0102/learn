@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+       < <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.3.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <groupId>org.ehrbase</groupId>
+    <artifactId>angular-sdk-example</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+    <dependencies>
+        <dependency>
+            <groupId>com.github.ehrbase</groupId>
+            <artifactId>openEHR_SDK</artifactId>
+            <version>v2.13.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.antlr</groupId>
+                    <artifactId>antlr4-runtime</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.nedap.healthcare.archie</groupId>
+                    <artifactId>utils</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                    <artifactId>jackson-annotations</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                    <artifactId>jackson-databind</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.fasterxml.jackson.datatype</groupId>
+                    <artifactId>jackson-datatype-jsr310</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.threeten</groupId>
+                    <artifactId>threeten-extra</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.github.zafarkhaja</groupId>
+                    <artifactId>java-semver</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.nedap.healthcare.archie</groupId>
+                    <artifactId>grammars</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.ibm.icu</groupId>
+                    <artifactId>icu4j</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.reflections</groupId>
+                    <artifactId>reflections</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>commons-io</groupId>
+                    <artifactId>commons-io</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.commons</groupId>
+                    <artifactId>commons-lang3</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.nedap.healthcare.archie</groupId>
+                    <artifactId>base</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.nedap.healthcare.archie</groupId>
+                    <artifactId>aom</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.nedap.healthcare.archie</groupId>
+                    <artifactId>odin</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.nedap.healthcare.archie</groupId>
+                    <artifactId>openehr-terminology</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.nedap.healthcare.archie</groupId>
+                    <artifactId>bmm</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.nedap.healthcare.archie</groupId>
+                    <artifactId>path-queries</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.esotericsoftware.kryo</groupId>
+                    <artifactId>kryo5</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.ow2.asm</groupId>
+                    <artifactId>asm</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.ehrbase.openehr.sdk</groupId>
+            <artifactId>client</artifactId>
+            <version>2.13.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.nedap.healthcare</groupId>
+            <artifactId>archie</artifactId>
+            <version>0.3.16</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ehrbase.openehr.sdk</groupId>
+            <artifactId>web-template</artifactId>
+            <version>2.13.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ehrbase.openehr.sdk</groupId>
+            <artifactId>generator-commons</artifactId>
+            <version>2.13.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ehrbase.openehr.sdk</groupId>
+            <artifactId>serialisation</artifactId>
+            <version>2.13.0</version>
+        </dependency>
+        <!-- <dependency>
+            <groupId>org.ehrbase.openehr.sdk</groupId>
+            <artifactId>web-template</artifactId>
+            <version>2.13.0</version>
+        </dependency> -->
+        <dependency>
+            <groupId>com.nedap.healthcare.archie</groupId>
+            <artifactId>openehr-rm</artifactId>
+            <version>3.10.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.ehrbase.openEHR_SDK</groupId>
+            <artifactId>client</artifactId>
+            <version>428c6a6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+
+    		<dependency>
+    			<groupId>com.fasterxml.jackson.core</groupId>
+    			<artifactId>jackson-core</artifactId>
+    			<version>2.16.0</version>
+    		</dependency>
+
+
+    		<dependency>
+    			<groupId>org.ow2.asm</groupId>
+    			<artifactId>asm</artifactId>
+    			<version>9.3</version>
+    		</dependency>
+
+
+    		<dependency>
+    			<groupId>com.nedap.healthcare.archie</groupId>
+    			<artifactId>path-queries</artifactId>
+    			<version>3.5.0</version>
+    		</dependency>
+
+
+    		<dependency>
+    			<groupId>com.esotericsoftware.kryo</groupId>
+    			<artifactId>kryo5</artifactId>
+    			<version>5.3.0</version>
+    		</dependency>
+
+
+    		<dependency>
+    			<groupId>com.nedap.healthcare.archie</groupId>
+    			<artifactId>odin</artifactId>
+    			<version>3.10.0</version>
+    		</dependency>
+
+
+    		<dependency>
+    			<groupId>com.nedap.healthcare.archie</groupId>
+    			<artifactId>utils</artifactId>
+    			<version>3.5.0</version>
+    		</dependency>
+
+
+    		<dependency>
+    			<groupId>com.nedap.healthcare.archie</groupId>
+    			<artifactId>aom</artifactId>
+    			<version>3.5.0</version>
+    		</dependency>
+
+
+    		<dependency>
+    			<groupId>com.nedap.healthcare.archie</groupId>
+    			<artifactId>archie-all</artifactId>
+    			<version>3.11.0</version>
+    		</dependency>
+
+
+    		<dependency>
+    			<groupId>com.github.zafarkhaja</groupId>
+    			<artifactId>java-semver</artifactId>
+    			<version>0.9.0</version>
+    		</dependency>
+
+
+    		<dependency>
+    			<groupId>commons-io</groupId>
+    			<artifactId>commons-io</artifactId>
+    			<version>2.13.0</version>
+    		</dependency>
+
+
+    		<dependency>
+    			<groupId>org.apache.commons</groupId>
+    			<artifactId>commons-lang3</artifactId>
+    			<version>3.12.0</version>
+    		</dependency>
+
+
+    		<dependency>
+    			<groupId>com.nedap.healthcare.archie</groupId>
+    			<artifactId>openehr-terminology</artifactId>
+    			<version>3.10.0</version>
+    		</dependency>
+
+
+    		<dependency>
+    			<groupId>com.nedap.healthcare.archie</groupId>
+    			<artifactId>bmm</artifactId>
+    			<version>3.10.0</version>
+    		</dependency>
+
+
+    		<dependency>
+    			<groupId>org.reflections</groupId>
+    			<artifactId>reflections</artifactId>
+    			<version>0.9.12</version>
+    		</dependency>
+
+
+    		<dependency>
+    			<groupId>com.ibm.icu</groupId>
+    			<artifactId>icu4j</artifactId>
+    			<version>72.1</version>
+    		</dependency>
+
+
+    		<dependency>
+    			<groupId>org.antlr</groupId>
+    			<artifactId>antlr4-runtime</artifactId>
+    			<version>4.11.1</version>
+    		</dependency>
+
+
+    		<dependency>
+    			<groupId>com.nedap.healthcare.archie</groupId>
+    			<artifactId>grammars</artifactId>
+    			<version>3.10.0</version>
+    		</dependency>
+
+
+    		<dependency>
+    			<groupId>org.threeten</groupId>
+    			<artifactId>threeten-extra</artifactId>
+    			<version>1.8.0</version>
+    		</dependency>
+
+
+    		<dependency>
+    			<groupId>com.fasterxml.jackson.datatype</groupId>
+    			<artifactId>jackson-datatype-jsr310</artifactId>
+    			<version>2.14.2</version>
+    		</dependency>
+
+
+    		<dependency>
+    			<groupId>com.fasterxml.jackson.core</groupId>
+    			<artifactId>jackson-databind</artifactId>
+    			<version>2.14.2</version>
+    		</dependency>
+
+
+    		<dependency>
+    			<groupId>com.fasterxml.jackson.core</groupId>
+    			<artifactId>jackson-annotations</artifactId>
+    			<version>2.14.2</version>
+    		</dependency>
+
+            <dependency>
+                <groupId>com.nedap.healthcare.archie</groupId>
+                <artifactId>tools</artifactId>
+                <version>3.5.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.36</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.classgraph</groupId>
+                <artifactId>classgraph</artifactId>
+                <version>4.8.166</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>32.1.3-jre</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-text</artifactId>
+                <version>1.12.0</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
+
+
+
+
+

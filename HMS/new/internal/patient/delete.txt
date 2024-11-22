@@ -1,0 +1,96 @@
+{
+    "uhid": "string",
+    "alternate_uhid": "string",
+    "first_name": "string", 
+    "last_name": "string",
+    "email_id": "string", 
+    "mobile_no": "string",
+    "date_of_birth": "YYYY-MM-DD HH:MM:SS", 
+    "gender": "string", 
+    "occupation": "string",
+    "family_members": {
+      "name_1": "object_id_1",      
+      "name_2": "object_id_2"      
+    },
+    "address": {
+      "type": "string",
+      "line_1": "string",
+      "line_2": "string",
+      "city": "string",
+      "district": "string",
+      "state": "string",
+      "pin_code": "string",
+      "country_code": "string"
+    },
+    "emergency_contact": {
+      "name": "string",
+      "relationship": "string",
+      "address": {
+        "type": "string",
+        "line_1": "string",
+        "line_2": "string",
+        "city": "string",
+        "district": "string",
+        "state": "string",
+        "pin_code": "string",
+        "country_code": "string"
+      },
+      "contact": {
+        "phone_type": "string",
+        "phone_number": "string",
+        "email_id": "string"
+      }
+    },
+    "add_as_family":"bool",
+    "abha_addresses": [
+        "address1",
+        "address2",
+        "address3"
+    ]
+}
+
+
+
+UHID             string          `json:"uhid"`
+AlternateUHID    string          `json:"alternate_uhid"`
+AbhaAddresses []string     `json:"abha_address"`
+PatientID        string          `json:"patient_id"`(Mandatory)
+EhrId              string           'json:"ehr_id"`
+FirstName        string          `json:"first_name"`(Mandatory)
+LastName         string          `json:"last_name"`
+EmailID     string `json:"email_id"`(Mandatory)
+MobileNo int `json:"mobile_no"`(Mandatory)
+IsActive bool 'json:"is_active" (Mandatory)
+DateOfBirth      time.Time       `json:"date_of_birth"`(Mandatory)
+Age              int             `json:"age"`
+Gender           string          `json:"gender"`(Mandatory)
+Occupation       string          `json:"occupation"`
+ModifyBy     string `json:"modify_by"`
+ModifiedDate time.Time `json:"modified_date"`               // time.Date
+CreatedBy    string `json:"created_by"`
+CreatedOn    time.Time `json:"created_on"`                  // time.Date
+FamilyMembers map[string]string  `json:"family_members"`
+Address          Address         `json:"address"`(Mandatory)
+Contact          Contact         `json:"contact"`
+EmergencyContact EmergencyContact `json:"emergency_contact"`
+CareProvider     CareProvider     `json:"care_provider"`
+InsuranceStatus  string           `json:"insurance_status"`
+InsuranceID      string           `json:"insurance_id"`
+
+Name         string  `json:"name"`
+Relationship string  `json:"relationship"`
+Address      Address `json:"address"`
+Contact      Contact `json:"contact"`
+
+PhoneType   string `json:"phone_type"`
+PhoneNumber string `json:"phone_number"`
+EmailID     string `json:"email_id"`
+
++Type        string `json:"type"`
++Line1       string `json:"line_1"`
++Line2       string `json:"line_2"`
++City        string `json:"city"`
++District    string `json:"district"`
++State       string `json:"state"`
++PinCode     string `json:"pin_code"`
++CountryCode string `json:"country_code"`

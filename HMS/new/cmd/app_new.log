@@ -1,0 +1,3 @@
+2024/08/21 10:27:03 config.go:103: INFO: - MESSAGE: Logger is working successfully - PID: 19736 
+2024/08/21 10:28:14 config.go:103: INFO: - MESSAGE: Logger is working successfully - PID: 20109 - FILE: main 
+2024/08/21 10:51:26 logger.go:103: INFO: - MESSAGE: Logger is working successfully - PID: 38779 - FILE: main 

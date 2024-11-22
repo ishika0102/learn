@@ -1,0 +1,342 @@
+{
+	"info": {
+		"_postman_id": "ce108d13-6b77-4dbf-950c-c38ea2cb2893",
+		"name": "HMS-App-Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18065621"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get One User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/users/USER_1724762534586313",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"users",
+								"USER_1724762534586313"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"first_name\": \"Sam\",\n    \"last_name\": \"Bahadur\",\n    \"email_address\": \"sam1@gmail.com\",\n    \"gender\": \"M\",\n    \"phone\": \"5647892130\",\n    \"profiles\": [\n        \"Profile_1\"\n    ],\n    \"dob\": \"2024-08-26T18:00:10Z\",\n    \"created_by\": \"Ciril\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/users",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search user by mobileNo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{app-local }}/users/search/5647892130",
+							"host": [
+								"{{app-local }}"
+							],
+							"path": [
+								"users",
+								"search",
+								"5647892130"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Dummy",
+			"item": [
+				{
+					"name": "List Departments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/departments",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"departments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Doctors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{app-local }}/doctors?department=Cardiology",
+							"host": [
+								"{{app-local }}"
+							],
+							"path": [
+								"doctors"
+							],
+							"query": [
+								{
+									"key": "department",
+									"value": "Cardiology"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Appointment",
+			"item": [
+				{
+					"name": "Get One Appointment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/appointments/SLOT_1724660306443659_1",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"appointments",
+								"SLOT_1724660306443659_1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Block Slot",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"duration_in_minutes\": 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/appointments/block/SLOT_1724660306443659_1/patient/PID_1724761373811012",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"appointments",
+								"block",
+								"SLOT_1724660306443659_1",
+								"patient",
+								"PID_1724761373811012"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Book Slot",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"token_no\": \"10\",\n    \"patient_id\": \"PID_000001\",\n    \"patient_name\": \"Subbaraj\",\n    \"service_id\": \"SERV_1\",\n    \"payment_status\": \"done\",\n    \"payment_id\": \"TRNX_1\",\n    \"notes\": \"Fever\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/appointments/book/SLOT_1724660306443659_1",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"appointments",
+								"book",
+								"SLOT_1724660306443659_1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Appointment Slots",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/appointments/DOC_1/slot/26-08-2024",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"appointments",
+								"DOC_1",
+								"slot",
+								"26-08-2024"
+							],
+							"query": [
+								{
+									"key": "department",
+									"value": "Orthopedics",
+									"description": "Department Name",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get upcoming appointment patient",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{app-local }}/appointments/patient/PID_000001",
+							"host": [
+								"{{app-local }}"
+							],
+							"path": [
+								"appointments",
+								"patient",
+								"PID_000001"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Patient APP",
+			"item": [
+				{
+					"name": "Search Patient",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{app-local }}/patients/search/8546213793",
+							"host": [
+								"{{app-local }}"
+							],
+							"path": [
+								"patients",
+								"search",
+								"8546213793"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register Patient",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"uhid\": \"Ciril\",\n    \"alternate_uhid\": \"Ciril\",\n    \"first_name\": \"Ciril\",\n    \"last_name\": \"Ciril\",\n    \"email_id\": \"no.error.this.time.0@gmail.com\",\n    \"mobile_no\": \"8546213793\",\n    \"date_of_birth\": \"2006-01-02T15:04:05Z\",\n    \"gender\": \"string\",\n    \"occupation\": \"string\",\n    \"address\": {\n        \"type\": \"string\",\n        \"line_1\": \"string\",\n        \"line_2\": \"string\",\n        \"city\": \"string\",\n        \"district\": \"string\",\n        \"state\": \"string\",\n        \"pin_code\": \"string\",\n        \"country_code\": \"string\"\n    },\n    \"emergency_contact\": {\n        \"name\": \"string\",\n        \"relationship\": \"string\",\n        \"address\": {\n            \"type\": \"string\",\n            \"line_1\": \"string\",\n            \"line_2\": \"string\",\n            \"city\": \"string\",\n            \"district\": \"string\",\n            \"state\": \"string\",\n            \"pin_code\": \"string\",\n            \"country_code\": \"string\"\n        },\n        \"contact\": {\n            \"phone_type\": \"string\",\n            \"phone_number\": \"string\",\n            \"email_id\": \"string\"\n        }\n    },\n    \"abha_addresses\": [\n        \"address1\",\n        \"address2\",\n        \"address3\"\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/patients/",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"patients",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "local",
+			"value": "http://0.0.0.0:8002/api",
+			"type": "string"
+		},
+		{
+			"key": "local",
+			"value": "http://10.10.5.56:7003/api",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "local_web",
+			"value": "http://10.10.2.195:7001/api",
+			"type": "string"
+		}
+	]
+}
